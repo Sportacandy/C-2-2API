@@ -1,0 +1,94 @@
+    get:
+      tags:
+      - データ流通システム
+      description: XXXデータモデルのデータを取得します。
+      parameters:
+      - name: targetDataModel
+        in: path
+        description: 対象データモデル
+        required: true
+        schema:
+          type: string
+        example: parts
+      - name: dataId
+        in: path
+        description: データID
+        required: true
+        schema:
+          type: string
+        example: 123456789
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                oneOf:
+                - $ref: "../components/schemas/dataModel/parts.yaml#/parts"
+                - $ref: "../components/schemas/dataModel/template.yaml#/datamodelname"
+                - $ref: "../components/schemas/dataModel/voxels.yaml#/voxels"
+    put:
+      tags:
+      - データ流通システム
+      description: XXXデータモデルのデータを新規作成or更新します。
+      parameters:
+      - name: targetDataModel
+        in: path
+        description: 対象データモデル
+        required: true
+        schema:
+          type: string
+        example: parts
+      - name: dataId
+        in: path
+        description: データID
+        required: true
+        schema:
+          type: string
+        example: 123456789
+      requestBody:
+        description: Request Body
+        content:
+          application/json:
+            schema:
+                oneOf:
+                - $ref: "../components/schemas/dataModel/parts.yaml#/parts"
+                - $ref: "../components/schemas/dataModel/template.yaml#/datamodelname"
+                - $ref: "../components/schemas/dataModel/voxels.yaml#/voxels"
+            examples:
+                create:
+                  summary: データ
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                - $ref: "../components/schemas/dataModel/parts.yaml#/parts"
+                - $ref: "../components/schemas/dataModel/template.yaml#/datamodelname"
+                - $ref: "../components/schemas/dataModel/voxels.yaml#/voxels"
+        "201":
+          description: Created       
+    delete: 
+      tags:
+      - データ流通システム
+      description: XXXデータモデルのデータを削除します。
+      parameters:
+      - name: targetDataModel
+        in: path
+        description: 対象データモデル
+        required: true
+        schema:
+          type: string
+        example: parts
+      - name: id
+        in: query
+        description: データを一意に識別するID
+        required: true
+        schema:
+          type: string
+          format: uuid
+      responses:
+        "200":
+          description: OK
