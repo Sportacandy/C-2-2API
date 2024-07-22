@@ -1,0 +1,21 @@
+traffics:
+  required:
+  - spot
+  - attribute
+  type: object
+  description: 交通渋滞データモデル
+  properties:
+    spot:
+      $ref: "./spots.yaml#/spots"
+    attribute:
+      type: object
+      description: 交通渋滞データモデル要素
+      required:
+        - tile
+      properties:
+        tile:
+          type: string
+          description: 地図タイルURL
+          minLength: 8
+          maxLength: 256
+          example: "https://cyberjapandata.gsi.go.jp/xyz/std/13/725/3239.png"

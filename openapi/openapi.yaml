@@ -1,12 +1,12 @@
 openapi: "3.0.3"
 info:
-  title: ユーザ認証/データ連携API
+  title: C-2-2[B] API
   version: "0.0.1"
 servers:
   - url: https://api.server.test/v1
 paths:
-  /login:
-    $ref: "./paths/login.yaml"
+#  /login:
+#    $ref: "./paths/login.yaml"
   /{targetDataModel}:
     $ref: "./paths/targetDataModel.yaml"
 components:
@@ -15,12 +15,20 @@ components:
       $ref: "./components/schemas/authentication/information.yaml#/information"
     authentication.Token:
       $ref: "./components/schemas/authentication/token.yaml#/token"
-    dataModel.template:
-      $ref: "./components/schemas/dataModel/template.yaml#/datamodelname"
-    dataModel.voxels:
-      $ref: "./components/schemas/dataModel/voxels.yaml#/voxels"
-    dataModel.parts:
-      $ref: "./components/schemas/dataModel/parts.yaml#/parts"
+    dataModel.spots:
+      $ref: "./components/schemas/dataModel/spots.yaml#/spots"
+    dataModel.maps:
+      $ref: "./components/schemas/dataModel/maps.yaml#/maps"
+    dataModel.hdmaps:
+      $ref: "./components/schemas/dataModel/hdmaps.yaml#/hdmaps"
+    dataModel.traffics:
+      $ref: "./components/schemas/dataModel/traffics.yaml#/traffics"
+    dataModel.trafficcontrols:
+      $ref: "./components/schemas/dataModel/trafficcontrols.yaml#/trafficcontrols"
+    dataModel.pointclouds:
+      $ref: "./components/schemas/dataModel/pointclouds.yaml#/pointclouds"
+    dataModel.weatherrisks:
+      $ref: "./components/schemas/dataModel/weatherrisks.yaml#/weatherrisks"
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
