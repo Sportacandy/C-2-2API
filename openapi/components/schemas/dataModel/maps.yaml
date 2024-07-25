@@ -1,12 +1,12 @@
 maps:
   required:
-  - spot
-  - attribute
+    - bbox
+    - attribute
   type: object
   description: SD地図データモデル
   properties:
-    spot:
-      $ref: "./spots.yaml#/spots"
+    bbox:
+      $ref: "./bbox.yaml#/bbox"
     attribute:
       type: object
       description: SD地図データモデル要素
@@ -17,5 +17,5 @@ maps:
           type: string
           description: 地図タイルURL
           minLength: 8
-          maxLength: 256
+          maxLength: 1024
           example: "https://cyberjapandata.gsi.go.jp/xyz/std/13/725/3239.png"

@@ -5,8 +5,8 @@ info:
 servers:
   - url: https://api.server.test/v1
 paths:
-#  /login:
-#    $ref: "./paths/login.yaml"
+  /login:
+    $ref: "./paths/login.yaml"
   /{targetDataModel}:
     $ref: "./paths/targetDataModel.yaml"
 components:
@@ -15,20 +15,36 @@ components:
       $ref: "./components/schemas/authentication/information.yaml#/information"
     authentication.Token:
       $ref: "./components/schemas/authentication/token.yaml#/token"
-    dataModel.spots:
-      $ref: "./components/schemas/dataModel/spots.yaml#/spots"
-    dataModel.maps:
-      $ref: "./components/schemas/dataModel/maps.yaml#/maps"
-    dataModel.hdmaps:
-      $ref: "./components/schemas/dataModel/hdmaps.yaml#/hdmaps"
-    dataModel.traffics:
-      $ref: "./components/schemas/dataModel/traffics.yaml#/traffics"
-    dataModel.trafficcontrols:
-      $ref: "./components/schemas/dataModel/trafficcontrols.yaml#/trafficcontrols"
-    dataModel.pointclouds:
-      $ref: "./components/schemas/dataModel/pointclouds.yaml#/pointclouds"
-    dataModel.weatherrisks:
-      $ref: "./components/schemas/dataModel/weatherrisks.yaml#/weatherrisks"
+    # dataModel.coord:
+    #   $ref: "./components/schemas/dataModel/coord.yaml#/coord"
+    # dataModel.coords:
+    #   $ref: "./components/schemas/dataModel/coords.yaml#/coords"
+    dataModel.bbox:
+      $ref: "./components/schemas/dataModel/bbox.yaml#/bbox"
+    dataModel.voxel:
+      $ref: "./components/schemas/dataModel/voxel.yaml#/voxel"
+    dataModel.mesh:
+      $ref: "./components/schemas/dataModel/mesh.yaml#/mesh"
+    dataModel.city:
+      $ref: "./components/schemas/dataModel/city.yaml#/city"
+    # dataModel.roadlink:
+    #   $ref: "./components/schemas/dataModel/roadlink.yaml#/roadlink"
+    # dataModel.spots:
+    #   $ref: "./components/schemas/dataModel/spots.yaml#/spots"
+    # dataModel.maps:
+    #   $ref: "./components/schemas/dataModel/maps.yaml#/maps"
+    # dataModel.hdmaps:
+    #   $ref: "./components/schemas/dataModel/hdmaps.yaml#/hdmaps"
+    dataModel.hdlanecenter:
+      $ref: "./components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
+    # dataModel.traffics:
+    #   $ref: "./components/schemas/dataModel/traffics.yaml#/traffics"
+    # dataModel.trafficcontrols:
+    #   $ref: "./components/schemas/dataModel/trafficcontrols.yaml#/trafficcontrols"
+    # dataModel.pointclouds:
+    #   $ref: "./components/schemas/dataModel/pointclouds.yaml#/pointclouds"
+    # dataModel.weatherrisks:
+    #   $ref: "./components/schemas/dataModel/weatherrisks.yaml#/weatherrisks"
   securitySchemes:
     ApiKeyAuth:
       type: apiKey

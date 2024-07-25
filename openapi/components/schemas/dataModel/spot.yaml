@@ -1,4 +1,4 @@
-spots:
+spot:
   type: object
   description: 地点座標データモデル
   required:

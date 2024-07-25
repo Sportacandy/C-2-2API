@@ -1,0 +1,11 @@
+coords:
+  type: object
+  description: 緯度経度座標データモデル
+  required:
+    - southeast
+#    - northwest
+  properties:
+    southeast:
+      $ref: "./coord.yaml#/coord"
+    northwest:
+      $ref: "./coord.yaml#/coord"

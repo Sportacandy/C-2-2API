@@ -1,0 +1,10 @@
+reg:
+  type: string
+  description: 絞り込み対象の交通規制情報。絞り込みをしない場合は指定しないこと。
+  enum:
+    - SPEED
+    - NOPASS
+    - ONEWAY
+    - NOTURN
+    - ZONE30
+  example: SPEED

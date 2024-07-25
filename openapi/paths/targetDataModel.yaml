@@ -9,18 +9,43 @@
         schema:
           type: string
         example: "maps"
-      - name: spot
-        in: path
-        description: 地点座標
-        required: true
+      - name: bbox
+        in: query
         schema:
-          $ref: "../components/schemas/dataModel/spots.yaml#/spots"
+          $ref: "../components/schemas/dataModel/bbox.yaml#/bbox"
+      - name: voxel
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/voxel.yaml#/voxel"
+      - name: mesh
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/mesh.yaml#/mesh"
+      - name: city
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: date
+        in: query
+        description: タイムスタンプ
+        schema:
+          type: string
+          format: date-time
+      - name: roadName
+        in: query
+        description: 道路名称。道路名称絞り込み対象の場合に指定可能。
+        schema:
+          type: string
+      - name: reg
+        in: query
+        schema: 
+          $ref: "../components/schemas/dataModel/reg.yaml#/reg"
       - name: dataType
         in: query
         description: データ形式
         schema:
           type: string
-        example: "std" # 地図:std*|photo, 点群:las|laz|potree*, csv
+        example: "std" # 地図:std*|photo, 点群:las|laz|potree*, json
       responses:
         "200":
           description: OK
@@ -28,11 +53,16 @@
             application/json:
               schema:
                 oneOf:
-                - $ref: "../components/schemas/dataModel/maps.yaml#/maps"
-                - $ref: "../components/schemas/dataModel/hdmaps.yaml#/hdmaps"
-                - $ref: "../components/schemas/dataModel/traffics.yaml#/traffics"
-                - $ref: "../components/schemas/dataModel/trafficcontrols.yaml#/trafficcontrols"
-                - $ref: "../components/schemas/dataModel/pointclouds.yaml#/pointclouds"
-                - $ref: "../components/schemas/dataModel/weatherrisks.yaml#/weatherrisks"
+                - $ref: "../components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
+                # - $ref: "../components/schemas/dataModel/maps.yaml#/maps"
+                # - $ref: "../components/schemas/dataModel/hdmaps.yaml#/hdmaps"
+#                - $ref: "../components/schemas/dataModel/traffics.yaml#/traffics"
+#                - $ref: "../components/schemas/dataModel/trafficcontrols.yaml#/trafficcontrols"
+#                - $ref: "../components/schemas/dataModel/pointclouds.yaml#/pointclouds"
+#                - $ref: "../components/schemas/dataModel/weatherrisks.yaml#/weatherrisks"
+            application/vnd.mapbox-vector-tile:
+              schema:
+                type: string
+                format: binary
         "400":
           description: Not available
