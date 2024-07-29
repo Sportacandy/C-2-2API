@@ -1,6 +1,6 @@
 city:
   type: integer
-  description: 行政区画コード
+  description: C-2-2[B] 行政区画コード データモデル
   format: int32
   minimum: 1
   maximum: 2147483647

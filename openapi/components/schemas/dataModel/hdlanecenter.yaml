@@ -1,6 +1,6 @@
 hdlanecenter:
   type: object
-  description: HD地図車線中心線データモデル
+  description: C-2-2[B] HD地図車線中心線データモデル
   properties:
     attribute:
       type: object
@@ -45,12 +45,12 @@ hdlanecenter:
                       minItems: 0
                       maxItems: 2147483647
                       items:
-                        type: number 
+                        type: number
                         format: double
                         minItems: 3
                         maxItems: 3
                         minimum: -100000000
-                        maximum:  100000000                   
+                        maximum:  100000000
                         example:
                           - [ 139.681994465, 35.50676814, 1.274998954 ]
                           - [ 139.681985082, 35.506773265, 1.277230526 ]

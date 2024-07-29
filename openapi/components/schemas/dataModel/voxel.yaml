@@ -1,6 +1,6 @@
 voxel:
   type: object
-  description: 空間IDデータモデル
+  description: C-2-2[B] 空間IDデータモデル
   required:
     - x
     - y

@@ -1,6 +1,6 @@
 reg:
   type: string
-  description: 絞り込み対象の交通規制情報。絞り込みをしない場合は指定しないこと。
+  description: C-2-2[B] 絞り込み対象の交通規制情報データモデル。絞り込みをしない場合は指定しないこと。
   enum:
     - SPEED
     - NOPASS

@@ -8,7 +8,7 @@
         required: true
         schema:
           type: string
-        example: "maps"
+        example: hdlanecenter
       - name: bbox
         in: query
         schema:
@@ -25,6 +25,9 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: roadlink
+        schema:
+          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: date
         in: query
         description: タイムスタンプ
@@ -36,16 +39,12 @@
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
+          minLength: 1
+          maxLength: 4096
       - name: reg
         in: query
-        schema: 
-          $ref: "../components/schemas/dataModel/reg.yaml#/reg"
-      - name: dataType
-        in: query
-        description: データ形式
         schema:
-          type: string
-        example: "std" # 地図:std*|photo, 点群:las|laz|potree*, json
+          $ref: "../components/schemas/dataModel/reg.yaml#/reg"
       responses:
         "200":
           description: OK
@@ -53,7 +52,9 @@
             application/json:
               schema:
                 oneOf:
+                - $ref: "../components/schemas/dataModel/facade.yaml#/facade"
                 - $ref: "../components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
+                - $ref: "../components/schemas/dataModel/hdlaneline.yaml#/hdlaneline"
                 # - $ref: "../components/schemas/dataModel/maps.yaml#/maps"
                 # - $ref: "../components/schemas/dataModel/hdmaps.yaml#/hdmaps"
 #                - $ref: "../components/schemas/dataModel/traffics.yaml#/traffics"

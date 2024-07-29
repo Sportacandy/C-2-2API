@@ -1,6 +1,6 @@
 bbox:
   type: array
-  description: バウンディングボックス（矩形領域座標)データモデル
+  description: C-2-2[B] バウンディングボックス（矩形領域座標)データモデル
   items:
     type: number
     format: double

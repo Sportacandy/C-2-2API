@@ -1,6 +1,6 @@
 roadlink:
   type: string
-  description: 道路リンク
-  minimum: 1
-  maximum: 512
+  description: C-2-2[B] 道路リンク データモデル
+  minLength: 1
+  maxLength: 4096
   example: "DRM-5033240026950332301219"
