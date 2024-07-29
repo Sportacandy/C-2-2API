@@ -1,6 +1,6 @@
 mesh:
   type: integer
-  description: メッシュコードデータモデル # 1st-mesh=4digits, 2nd-mesh=6digits, 3rd-mesh=8digits
+  description: メッシュコードデータモデル 1st-mesh=4digits, 2nd-mesh=6digits, 3rd-mesh=8digits
   format: int32
   minimum: 0
   maximum: 2147483647

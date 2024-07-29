@@ -7,6 +7,10 @@ servers:
 paths:
   /login:
     $ref: "./paths/login.yaml"
+  # /hdlanecenter:
+  #   $ref: "./paths/HDLaneCenter.yaml"
+  /map-pf/{dataType}/{z}/{x}/{y}.pbf:
+    $ref: "./paths/map.yaml"
   /{targetDataModel}:
     $ref: "./paths/targetDataModel.yaml"
 components:
@@ -15,10 +19,6 @@ components:
       $ref: "./components/schemas/authentication/information.yaml#/information"
     authentication.Token:
       $ref: "./components/schemas/authentication/token.yaml#/token"
-    # dataModel.coord:
-    #   $ref: "./components/schemas/dataModel/coord.yaml#/coord"
-    # dataModel.coords:
-    #   $ref: "./components/schemas/dataModel/coords.yaml#/coords"
     dataModel.bbox:
       $ref: "./components/schemas/dataModel/bbox.yaml#/bbox"
     dataModel.voxel:
@@ -27,14 +27,10 @@ components:
       $ref: "./components/schemas/dataModel/mesh.yaml#/mesh"
     dataModel.city:
       $ref: "./components/schemas/dataModel/city.yaml#/city"
-    # dataModel.roadlink:
-    #   $ref: "./components/schemas/dataModel/roadlink.yaml#/roadlink"
-    # dataModel.spots:
-    #   $ref: "./components/schemas/dataModel/spots.yaml#/spots"
-    # dataModel.maps:
-    #   $ref: "./components/schemas/dataModel/maps.yaml#/maps"
-    # dataModel.hdmaps:
-    #   $ref: "./components/schemas/dataModel/hdmaps.yaml#/hdmaps"
+    dataModel.roadlink:
+      $ref: "./components/schemas/dataModel/roadlink.yaml#/roadlink"
+    dataModel.reg:
+      $ref: "./components/schemas/dataModel/reg.yaml#/reg"
     dataModel.hdlanecenter:
       $ref: "./components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
     # dataModel.traffics:

@@ -1,0 +1,67 @@
+    get:
+      summary: C-2-2[B] HD車線中心線・交通規制情報データモデル取得
+      description: HD車線中心線・交通規制情報データモデルのデータを取得します。
+      parameters:
+      # - name: HDLaneCenter
+      #   in: path
+      #   description: 対象データモデル
+      #   required: true
+      #   schema:
+      #     type: string
+      #   example: "maps"
+      - name: bbox
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/bbox.yaml#/bbox"
+      - name: voxel
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/voxel.yaml#/voxel"
+      - name: mesh
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/mesh.yaml#/mesh"
+      - name: city
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: roadlink
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
+      - name: date
+        in: query
+        description: タイムスタンプ
+        schema:
+          type: string
+          format: date-time
+      - name: roadName
+        in: query
+        description: 道路名称。道路名称絞り込み対象の場合に指定可能。
+        schema:
+          type: string
+      - name: reg
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/reg.yaml#/reg"
+      - name: dataType
+        in: query
+        description: データ形式
+        schema:
+          type: string
+          enum:
+            - geojson
+            - pbf
+        example: geojson # default=geojson
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                oneOf:
+                - $ref: "../components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
+        "400":
+          description: リクエスト入力形式不備
+        "401":
+          description: 認証トークン不備、有効期限切れ、アクセス権限無し

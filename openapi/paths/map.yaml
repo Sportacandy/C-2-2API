@@ -1,0 +1,63 @@
+    get:
+      summary: C-2-2[B] 道路情報PBF取得
+      description: 道路情報PBFを取得します。
+      parameters:
+      - name: dataType
+        description: 取得データ種別
+        required: true
+        in: path
+        schema:
+          type: string
+          enum:
+            - hd-lane-center
+            - hd-lane-line
+            - hd-road-edge
+            - hd-intersection
+            - hd-pavement-marking
+            - hd-sign
+            - sd-road-link
+            - sd-road-node
+            - road-traffic-jam
+            - road-traffic-reg
+      - name: z
+        description: ズームレベル(Z)
+        required: true
+        in: path
+        schema:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 2147483647
+          example: 13
+      - name: x
+        description: Xタイル番号
+        required: true
+        in: path
+        schema:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 2147483647
+          example: 7273
+      - name: y
+        description: Yタイル番号
+        required: true
+        in: path
+        schema:
+          type: integer
+          format: int32
+          minimum: 0
+          maximum: 2147483647
+          example: 3229
+      responses:
+        "200":
+          description: OK
+          content:
+            application/vnd.mapbox-vector-tile:
+              schema:
+                type: string
+                format: binary
+        "400":
+          description: リクエスト入力形式不備
+        "401":
+          description: 認証トークン不備、有効期限切れ、アクセス権限無し

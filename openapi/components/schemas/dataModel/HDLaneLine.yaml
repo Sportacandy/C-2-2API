@@ -61,79 +61,79 @@ hdlanecenter:
               properties:
                 properties:
                   roadSegmentId:
+                    description: HDロードセグメントID
                     type: integer
                     format: int32
                     minimum: 0
                     maximum: 2147483647
                     example: 18
-                  laneNumber:
+                  ordinalId:
+                    description: HD区画線番号
                     type: integer
                     format: int32
                     minimum: 0
                     maimum: 2147483647
                     example: 1
                   minSeq:
+                    description: HDシーケンス番号最小値
                     type: integer
                     format: int32
                     minimum: 0
                     maximum: 2147483647
                     example: 0
                   maxSeq:
+                    description: HDシーケンス番号最大値
                     type: integer
                     format: int32
                     minimum: 0
                     maximum: 2147483647
                     example: 5
-                  linkId: # SD道路リンクID。SDマップと関連がない場合は-1。
+                  color:
+                    description: 線色
+                    type: integer
+                    format: int32
+                    minimum: -2147483648
+                    maximum: 2147483647
+                    example: 0
+                  type:
+                    description: 線種
+                    type: integer
+                    format: int32
+                    minimum: -2147483648
+                    maximum: 2147483647
+                    example: 0
+                  width:
+                    description: 線幅
                     type: integer
                     format: int32
                     minimum: 0
                     maximum: 2147483647
-                    example: 3253746
-                  direction: # SD道路リンク方向。SDマップと関連がない場合は-1。1: 正方向、2:逆方向
+                    example: 1
+                  linkId:
+                    description: SD道路リンクID。SDマップと関連がない場合は-1。
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 0
+                  direction:
+                    description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
                     type: integer
                     format: int32
                     minimum: -1
                     maximum: 2
                     example: 1
-                  classCode: # 道路種別コード。SDマップと関連がない場合は-1。
+                  classCode:
+                    description: 道路種別コード。SDマップと関連がない場合は-1。
                     type: integer
                     format: int32
-                    minimum: 0
+                    minimum: -1
                     maximum: 2147483647
                     example: 6
-                  nameCode:  # 路線名称コード。SDマップと関連がない、またはSD道路名が紐づいていない場合は-1。
+                  nameCode:
+                    description: 路線名称コード。SDマップと関連がない、またはSD道路名が紐づいていない場合は-1。
                     type: integer
                     format: int32
-                    minimum: 0
+                    minimum: -1
                     maximum: 2147483647
                     example: 162944
-                  hasNopass: # 通行禁止。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
-                    type: integer
-                    format: int32
-                    minimum: 0
-                    maximum: 1
-                    example: 0
-                  hasNoturn: # 指定外進入禁止対象。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
-                    type: integer
-                    minimum: 0
-                    maximum: 1
-                    example: 0
-                  hasOneway: # 一方通行対象。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
-                    type: integer
-                    format: int32
-                    minimum: 0
-                    maximum: 1
-                    example: 1
-                  hasSpeed: # 速度制限対象。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
-                    type: integer
-                    format: int32
-                    minimum: 0
-                    maximum: 1
-                    example: 1
-                  hasZone30: # ゾーン30対象。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
-                    type: integer
-                    format: int32
-                    minimum: 0
-                    maximum: 1
-                    example: 0
