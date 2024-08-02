@@ -8,6 +8,6 @@
             application/json:
               schema:
                 oneOf:
-                - $ref: "../components/schemas/dataModel/facade.yaml#/facade"
+                - $ref: "../components/schemas/dataModel/Facade.yaml#/facade"
         "401":
           description: 認証トークン不備、有効期限切れ、アクセス権限無し

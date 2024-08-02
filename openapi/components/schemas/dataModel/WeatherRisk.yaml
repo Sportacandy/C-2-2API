@@ -1,4 +1,4 @@
-weatherrisks:
+weatherrisk:
   type: object
   description: C-2-2[B] 気象リスク・データモデル [TBD]
   properties:
@@ -9,4 +9,3 @@ weatherrisks:
         - test1
         - test2
       example: test1
- 

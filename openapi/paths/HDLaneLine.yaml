@@ -1,6 +1,6 @@
     get:
-      summary: C-2-2[B] HD地図車線中心線・交通規制情報データモデル取得
-      description: HD地図車線中心線・交通規制情報データモデルのデータを取得します。
+      summary: C-2-2[B] HD地図区画線データモデル取得
+      description: HD地図区画線データモデルのデータを取得します。
       parameters:
       - name: bbox
         in: query
@@ -33,26 +33,13 @@
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
-      - name: reg
-        in: query
-        schema:
-          $ref: "../components/schemas/dataModel/reg.yaml#/reg"
-      # - name: dataType
-      #   in: query
-      #   description: データ形式
-      #   schema:
-      #     type: string
-      #     enum:
-      #       - geojson
-      #       - pbf
-      #   example: geojson # default=geojson
       responses:
         "200":
           description: OK
           content:
             application/json:
               schema:
-                $ref: "../components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
+                $ref: "../components/schemas/dataModel/HDLaneLine.yaml#/hdlaneline"
         "400":
           description: リクエスト入力形式不備
         "401":

@@ -1,0 +1,139 @@
+trafficregulation:
+  type: object
+  description: C-2-2[B] 交通規制情報データモデル
+  properties:
+    attribute:
+      type: object
+      description: 交通規制情報データモデル要素
+      required:
+        - type
+        - features
+      properties:
+        type:
+          type: string
+          description: フィーチャID
+          minLength: 1
+          maxLength: 20
+          example: "FeatureCollection"
+        features:
+          type: array
+          description: フィーチャ配列
+          items:
+            type: object
+            description: フィーチャ要素
+            minItems: 0
+            maxItems: 2147483647
+            properties:
+              type:
+                type: string
+                minLength: 1
+                maxLength: 20
+                example: "Feature"
+              geometry:
+                type: object
+                properties:
+                  type:
+                    type: string
+                    description: ジオメトリ形式
+                    minLength: 1
+                    maxLength: 20
+                    example: "LineString"
+                  coordinates:
+                    type: array
+                    items:
+                      type: array
+                      minItems: 0
+                      maxItems: 2147483647
+                      items:
+                        type: number
+                        format: double
+                        minItems: 3
+                        maxItems: 3
+                        minimum: -100000000
+                        maximum:  100000000
+                        example:
+                          - [ 139.681994465, 35.50676814, 1.274998954 ]
+                          - [ 139.681985082, 35.506773265, 1.277230526 ]
+                          - [ 139.6819757, 35.506778388, 1.279459773 ]
+                          - [ 139.681966318, 35.506783512, 1.281689601 ]
+                          - [ 139.681956936, 35.506788637, 1.283919998 ]
+                          - [ 139.681947554, 35.506793761, 1.286150968 ]
+              properties:
+                properties:
+                  roadSegmentId:
+                    description: HDロードセグメントID
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 18
+                  ordinalId:
+                    description: HD区画線番号
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maimum: 2147483647
+                    example: 1
+                  minSeq:
+                    description: HDシーケンス番号最小値
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 0
+                  maxSeq:
+                    description: HDシーケンス番号最大値
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 5
+                  color:
+                    description: 線色
+                    type: integer
+                    format: int32
+                    minimum: -2147483648
+                    maximum: 2147483647
+                    example: 0
+                  type:
+                    description: 線種
+                    type: integer
+                    format: int32
+                    minimum: -2147483648
+                    maximum: 2147483647
+                    example: 0
+                  width:
+                    description: 線幅
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 1
+                  linkId:
+                    description: SD道路リンクID。SDマップと関連がない場合は-1。
+                    type: integer
+                    format: int32
+                    minimum: 0
+                    maximum: 2147483647
+                    example: 0
+                  direction:
+                    description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
+                    type: integer
+                    format: int32
+                    minimum: -1
+                    maximum: 2
+                    example: 1
+                  classCode:
+                    description: 道路種別コード。SDマップと関連がない場合は-1。
+                    type: integer
+                    format: int32
+                    minimum: -1
+                    maximum: 2147483647
+                    example: 6
+                  nameCode:
+                    description: 路線名称コード。SDマップと関連がない、またはSD道路名が紐づいていない場合は-1。
+                    type: integer
+                    format: int32
+                    minimum: -1
+                    maximum: 2147483647
+                    example: 162944
