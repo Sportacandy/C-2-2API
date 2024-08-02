@@ -1,0 +1,360 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.5 Chrome/126.0.6478.183 Electron/31.3.0 Safari/537.36" version="24.7.5" pages="3">
+  <diagram name="ヒヤリハット情報一覧取得" id="2YBvvXClWsGukQMizWep">
+    <mxGraphModel dx="922" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-1" value=":検索画面／&lt;br&gt;C-3-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="90" y="60" width="100" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
+          <mxGeometry x="45" y="70" width="10" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="8bO64-w10JcvSiiolOos-17" value="レスポンスをパースして画面に表示" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="8bO64-w10JcvSiiolOos-18" parent="aM9ryv3xv72pqoxQDRHE-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="410" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8bO64-w10JcvSiiolOos-18" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-1">
+          <mxGeometry x="50" y="430" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value=":C-3-2API" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="400" y="60" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
+          <mxGeometry x="45" y="80" width="10" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="50" y="120" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-3" value="パラメータをパース。検索条件を取得。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="J7iaekeB9LnoG-GjlK3Z-2" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="100" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="130" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-13" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="50" y="210" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-14" value="DBクエリを実行" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="J7iaekeB9LnoG-GjlK3Z-13" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="190" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-4" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="aM9ryv3xv72pqoxQDRHE-5">
+          <mxGeometry x="50" y="300" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="J7iaekeB9LnoG-GjlK3Z-5" value="クエリ結果をレスポンスに成形" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="aM9ryv3xv72pqoxQDRHE-5" target="J7iaekeB9LnoG-GjlK3Z-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="280" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-7" value="GET /HHList (検索条件)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" source="aM9ryv3xv72pqoxQDRHE-2" target="aM9ryv3xv72pqoxQDRHE-6" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="150" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-8" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="144.9999999999999" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="235" y="430" />
+            </Array>
+            <mxPoint x="445" y="430" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o49M40jf8pb70267GpUY-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ヒヤリハット情報 ID&lt;span style=&quot;background-color: initial;&quot;&gt;の配列&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="260" y="440" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o49M40jf8pb70267GpUY-3" value="【C-3-2API】ヒヤリハット情報一覧取得" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry width="460" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="N0fPHJE9spCg-Nr3fy_z" name="ダウンロード情報取得">
+    <mxGraphModel dx="968" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-1" value="&lt;div style=&quot;&quot;&gt;検索画面で「ダウンロード」押下時、等。&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="520" y="100" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-2" value=":検索画面／&lt;br&gt;C-3-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="90" y="60" width="100" height="780" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PX8ydbKa5E1XZQqs7dl4-2">
+          <mxGeometry x="45" y="70" width="10" height="660" as="geometry" />
+        </mxCell>
+        <mxCell id="AlxeJw2kCHFHj-jZnsS_-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PX8ydbKa5E1XZQqs7dl4-2">
+          <mxGeometry x="50.00000000000003" y="480" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AlxeJw2kCHFHj-jZnsS_-6" value="レスポンスをパースしてポップアップ画面に表示" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="AlxeJw2kCHFHj-jZnsS_-5" parent="PX8ydbKa5E1XZQqs7dl4-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55.00000000000003" y="460" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85.00000000000003" y="490" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-4" value=":C-3-2API" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="400" y="60" width="100" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-5" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PX8ydbKa5E1XZQqs7dl4-4">
+          <mxGeometry x="45" y="80" width="10" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PX8ydbKa5E1XZQqs7dl4-4">
+          <mxGeometry x="50" y="200" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-4" value="DBクエリを実行。IDに紐付く属性情報を取得。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="PX8ydbKa5E1XZQqs7dl4-4" target="iQxSikYPMxUMgg0NpMeS-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="180" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-6" value="GET /HHDownLoadInfo (ヒヤリハットID)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1" source="PX8ydbKa5E1XZQqs7dl4-3" target="PX8ydbKa5E1XZQqs7dl4-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="150" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-7" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1" source="PX8ydbKa5E1XZQqs7dl4-5" target="PX8ydbKa5E1XZQqs7dl4-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="399.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="240" y="399.5" />
+            </Array>
+            <mxPoint x="430" y="400" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-8" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;ヒヤリハット情報 URLと&lt;span style=&quot;background-color: initial;&quot;&gt;属性情報&lt;/span&gt;&lt;/font&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="220" y="410" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-9" value="【C-3-2API】ヒヤリハット（ダウンロード）情報取得" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry width="600" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-10" value="&lt;div style=&quot;text-align: left;&quot;&gt;ヒヤリハット情報URLは、AWS S3オブジェクトへの署名付きURL&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;https://&lt;i&gt;&lt;font color=&quot;#ff0000&quot;&gt;hhBucketName&lt;/font&gt;.s3.ap-northeast-1.amazonaws.com/&lt;font color=&quot;#ff0000&quot;&gt;hhObjectName&lt;/font&gt;?XXXX=YYY&amp;amp;ZZZZ=WWW...&lt;/i&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="450" width="580" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-11" value=":AWS" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="325" y="640" width="100" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="PX8ydbKa5E1XZQqs7dl4-11">
+          <mxGeometry x="45" y="80" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-13" value="M1またはM2の手段で取得" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1" source="PX8ydbKa5E1XZQqs7dl4-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="140" y="734.5" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="175" y="734.5" />
+            </Array>
+            <mxPoint x="370" y="734.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PX8ydbKa5E1XZQqs7dl4-14" value="&lt;div style=&quot;&quot;&gt;ヒヤリハット情報ファイルを取得する手段は下記のいずれかの想定。&lt;br&gt;&amp;nbsp; M1. 【汎用】ヒヤリハット情報URLを用いてHTTPダウンロードする。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&amp;nbsp; M2. 【&lt;span style=&quot;background-color: initial;&quot;&gt;C-3-1専用】&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ヒヤリハット情報URLからAWS S3バケット名、オブジェクト名を抽出し、AWS CLI等でコピーを取得する。（例: aws s3 cp）&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="400" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="450" y="180" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-2" value="パラメータをパース。ヒヤリハット情報IDを取得。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1" target="iQxSikYPMxUMgg0NpMeS-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="160" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-5" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="iQxSikYPMxUMgg0NpMeS-6" value="クエリ結果をレスポンスに成形。&lt;br&gt;S3バケット名、オブジェクト名からダウンロードURLを生成。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="1" target="iQxSikYPMxUMgg0NpMeS-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="455" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="485" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZUuVIlAZlCUYHYgT8fE_-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;HHファイル&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="160" y="770" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZUuVIlAZlCUYHYgT8fE_-2" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1" source="PX8ydbKa5E1XZQqs7dl4-12" target="PX8ydbKa5E1XZQqs7dl4-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="760" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="759.5" />
+            </Array>
+            <mxPoint x="350" y="760" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AlxeJw2kCHFHj-jZnsS_-8" value="&lt;div style=&quot;&quot;&gt;検索画面ではM1の手段のみ実装（要検討）&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="170" y="580" width="245" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="UGcWqBw-MRLe_2TwSHht" name="インポート">
+    <mxGraphModel dx="714" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S86Q4N-xYp5FSVqNh4b2-1" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=#FF0000;fillColor=none;dashed=1;strokeWidth=4;" vertex="1" parent="1">
+          <mxGeometry x="300" y="290" width="260" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-3" value=":C-3-2" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="260" y="60" width="100" height="650" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qGiBzDqto1PauH7uGcFd-3" vertex="1">
+          <mxGeometry x="45" y="80" width="10" height="550" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qGiBzDqto1PauH7uGcFd-3" vertex="1">
+          <mxGeometry x="50" y="110" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-8" value="S3にファイルを配置" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="qGiBzDqto1PauH7uGcFd-3" target="qGiBzDqto1PauH7uGcFd-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="90" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-9" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="qGiBzDqto1PauH7uGcFd-3" vertex="1">
+          <mxGeometry x="50" y="580" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-10" value="DBに属性情報、S3バケット名／オブジェクト名をインサート（登録）" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="qGiBzDqto1PauH7uGcFd-3" target="qGiBzDqto1PauH7uGcFd-9" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="560" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-11" value="ヒヤリハット情報をアップロード" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" target="qGiBzDqto1PauH7uGcFd-4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="140" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="90" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-13" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;属性情報&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f9f7ed;strokeColor=#36393d;" parent="1" vertex="1">
+          <mxGeometry x="440" y="550" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qGiBzDqto1PauH7uGcFd-14" value="【C-3-2】インポート" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry width="460" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="HxtDf1zTlWL74XJXZVl1-1" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_1imubbgdgHgRYpf1wG-1" value="：C-3-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
+          <mxGeometry x="510" y="60" width="100" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="i_1imubbgdgHgRYpf1wG-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="i_1imubbgdgHgRYpf1wG-1" vertex="1">
+          <mxGeometry x="45" y="170" width="10" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="zFCv01XL2Gw1BskVtJmq-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="i_1imubbgdgHgRYpf1wG-1" vertex="1">
+          <mxGeometry x="50" y="330" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zFCv01XL2Gw1BskVtJmq-3" value="属性情報を抽出" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="i_1imubbgdgHgRYpf1wG-1" target="zFCv01XL2Gw1BskVtJmq-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="310" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qvx2M1soNbA3H26KxhZh-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="i_1imubbgdgHgRYpf1wG-1" vertex="1">
+          <mxGeometry x="50" y="400" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="qvx2M1soNbA3H26KxhZh-2" value="属性情報をレスポンスに成形" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="i_1imubbgdgHgRYpf1wG-1" target="qvx2M1soNbA3H26KxhZh-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="380" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="paS89xL0BMeFsve1TRa9-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="i_1imubbgdgHgRYpf1wG-1" vertex="1">
+          <mxGeometry x="50" y="200" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="paS89xL0BMeFsve1TRa9-2" value="パラメータをパース" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="i_1imubbgdgHgRYpf1wG-1" target="paS89xL0BMeFsve1TRa9-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="180" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRa5BKx0kH7TZFDEgGhq-3" value="GET /HHAttribute (対象ファイルURL)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" source="qGiBzDqto1PauH7uGcFd-4" target="i_1imubbgdgHgRYpf1wG-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="230" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="365" y="230" />
+            </Array>
+            <mxPoint x="550" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MzcSC713CyIkJi5MTumU-1" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" source="i_1imubbgdgHgRYpf1wG-2" target="qGiBzDqto1PauH7uGcFd-4" edge="1">
+          <mxGeometry x="-0.0833" relative="1" as="geometry">
+            <mxPoint x="330" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="390" y="540" />
+            </Array>
+            <mxPoint x="550" y="540" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="z6mvpGPwB908QbrIE_FS-1" value="&lt;div style=&quot;&quot;&gt;C-3-1側属性情報抽出API呼び出し。&lt;/div&gt;&lt;div style=&quot;&quot;&gt;パラメータには、抽出処理対象ファイルを含める。&lt;br&gt;ダウンロードURLと同じ記法&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="580" y="160" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="nIx9MlkqrdJCBS8YjNAD-1" value="M2（前頁参照）の手段でHHファイルを取得" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" source="i_1imubbgdgHgRYpf1wG-2" target="S86Q4N-xYp5FSVqNh4b2-2" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="545" y="330" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="350" y="330" />
+            </Array>
+            <mxPoint x="320" y="330.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MABN9xiIlx7WykuVJ-jH-2" value="" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" source="S86Q4N-xYp5FSVqNh4b2-2" target="i_1imubbgdgHgRYpf1wG-2" edge="1">
+          <mxGeometry x="-0.0833" relative="1" as="geometry">
+            <mxPoint x="550" y="359.5" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="395" y="359.5" />
+            </Array>
+            <mxPoint x="330" y="360" as="sourcePoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MABN9xiIlx7WykuVJ-jH-3" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;HHファイル&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#f9f7ed;strokeColor=#36393d;" parent="1" vertex="1">
+          <mxGeometry x="330" y="370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zFCv01XL2Gw1BskVtJmq-1" value="&lt;div style=&quot;&quot;&gt;インポート作業者&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" parent="1" vertex="1">
+          <mxGeometry x="10" y="200" width="140" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="S86Q4N-xYp5FSVqNh4b2-2" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="310" y="310" width="10" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
