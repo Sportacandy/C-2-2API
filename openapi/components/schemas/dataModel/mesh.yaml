@@ -1,7 +1,7 @@
 mesh:
-  type: integer
   description: C-2-2[B] メッシュコード データモデル 1st-mesh=4digits, 2nd-mesh=6digits, 3rd-mesh=8digits
+  type: number
   format: int32
-  minimum: 0
+  minimum: -2147483648
   maximum: 2147483647
   example: 123456

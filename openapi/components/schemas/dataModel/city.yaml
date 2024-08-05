@@ -1,7 +1,7 @@
 city:
-  type: integer
+  type: number
   description: C-2-2[B] 行政区画コード データモデル
   format: int32
-  minimum: 1
+  minimum: -2147483648
   maximum: 2147483647
   example:  01203

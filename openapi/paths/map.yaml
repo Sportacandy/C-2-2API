@@ -17,14 +17,14 @@
             - hd-sign
             - sd-road-link
             - sd-road-node
-            - road-traffic-jam
+            - road-traffic
             - road-traffic-reg
       - name: z
         description: ズームレベル(Z)
         required: true
         in: path
         schema:
-          type: integer
+          type: number
           format: int32
           minimum: 0
           maximum: 2147483647
@@ -34,7 +34,7 @@
         required: true
         in: path
         schema:
-          type: integer
+          type: number
           format: int32
           minimum: 0
           maximum: 2147483647
@@ -44,7 +44,7 @@
         required: true
         in: path
         schema:
-          type: integer
+          type: number
           format: int32
           minimum: 0
           maximum: 2147483647
@@ -57,6 +57,8 @@
               schema:
                 type: string
                 format: binary
+                minLength: 1
+                maxLength: 2147483647
         "400":
           description: リクエスト入力形式不備
         "401":

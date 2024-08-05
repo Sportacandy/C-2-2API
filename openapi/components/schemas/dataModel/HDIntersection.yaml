@@ -1,102 +1,85 @@
 hdintersection:
-  type: object
   description: C-2-2[B] HD地図交差点データモデル
+  type: object
+  required:
+    - type
+    - features
   properties:
-    attribute:
-      type: object
-      description: HD地図交差点データモデル要素
-      required:
-        - type
-        - features
-      properties:
-        type:
-          type: string
-          description: フィーチャID
-          minLength: 1
-          maxLength: 20
-          example: "FeatureCollection"
-        features:
-          type: array
-          description: フィーチャ配列
-          items:
+    type:
+      type: string
+      description: フィーチャID
+      minLength: 1
+      maxLength: 20
+      example: FeatureCollection
+    features:
+      type: array
+      description: フィーチャ配列
+      items:
+        type: object
+        description: フィーチャ要素
+        minItems: 0
+        maxItems: 2147483647
+        properties:
+          type:
+            type: string
+            minLength: 1
+            maxLength: 20
+            example: Feature
+          geometry:
             type: object
-            description: フィーチャ要素
-            minItems: 0
-            maxItems: 2147483647
             properties:
               type:
                 type: string
+                description: ジオメトリ形式
                 minLength: 1
                 maxLength: 20
-                example: "Feature"
-              geometry:
-                type: object
-                properties:
-                  type:
-                    type: string
-                    description: ジオメトリ形式
-                    minLength: 1
-                    maxLength: 20
-                    example: "LineString"
-                  coordinates:
-                    type: array
-                    items:
-                      type: array
-                      minItems: 0
-                      maxItems: 2147483647
-                      items:
-                        type: number
-                        format: double
-                        minItems: 3
-                        maxItems: 3
-                        minimum: -100000000
-                        maximum:  100000000
-                        example:
-                          - [ 139.681994465, 35.50676814, 1.274998954 ]
-                          - [ 139.681985082, 35.506773265, 1.277230526 ]
-                          - [ 139.6819757, 35.506778388, 1.279459773 ]
-                          - [ 139.681966318, 35.506783512, 1.281689601 ]
-                          - [ 139.681956936, 35.506788637, 1.283919998 ]
-                          - [ 139.681947554, 35.506793761, 1.286150968 ]
-              properties:
-                properties:
-                  id:
-                    description: HD交差点ID
-                    type: integer
-                    format: int32
-                    minimum: 0
-                    maximum: 2147483647
-                    example: 18
-                  roadSegmentIds:
-                    description: HD道路セグメントID配列。SDマップと関連がない場合は空配列（[]）。
-                    type: array
-                    items:
-                      type: integer
-                      format: int32
-                      minItems: 0
-                      maxItems: 2147483647
-                      minimum: 0
-                      maximum: 2147483647
-                      example:
-                        - [ 1010000, 1010001 ]
-                  classCodes:
-                    description: 道路種別コード配列。アンダースコア（_）繋ぎ(例："_1_")。SDマップと関連がない場合は空配列（[]）。
-                    type: array
-                    items:
-                      type: string
-                      minLength: 0
-                      maxLength: 2147483647
-                      example:
-                        - [ "_1_", "_2_4_" ]
-                  nameCodes:
-                    description: 路線名称コード配列。SDマップと関連がない、またはSD道路名が紐づいていない場合は空配列（[]）。
-                    type: array
-                    items:
-                      type: integer
-                      format: int32
-                      minItems: 0
-                      maxItems: 2147483647
-                      minimum: -1
-                      maximum: 2147483647
-                      example:
-                        - [ 123, 122, 128 ]
+                example: Polygon
+              coordinates:
+                $ref: "../dataModel/Coordinates.yaml#/coordinates"
+          properties:
+            type: object
+            properties:
+              id:
+                description: HD交差点ID
+                type: number
+                format: int32
+                minimum: -2147483648
+                maximum: 2147483647
+                example: 18
+              roadSegmentIds:
+                description: HD道路セグメントID配列。SDマップと関連がない場合は空配列（[]）。
+                type: array
+                items:
+                  type: number
+                  format: int32
+                  minItems: 0
+                  maxItems: 2147483647
+                  minimum: -2147483648
+                  maximum: 2147483647
+                  example:
+                    - 1010000
+                    - 1010001
+              classCodes:
+                description: 道路種別コード配列。アンダースコア（_）繋ぎ(例："_1_")。SDマップと関連がない場合は空配列（[]）。
+                type: array
+                items:
+                  type: string
+                  minLength: 0
+                  maxLength: 2147483647
+                  example:
+                    - "_1_"
+                    - "_2_4_"
+              nameCodes:
+                description: 路線名称コード配列。SDマップと関連がない、またはSD道路名が紐づいていない場合は空配列（[]）。
+                type: array
+                items:
+                  type: number
+                  format: int32
+                  minItems: 0
+                  maxItems: 2147483647
+                  minimum: -2147483648
+                  maximum: 2147483647
+                  example:
+                    - 123
+                    - 122
+                    - 128

@@ -1,6 +1,6 @@
 weatherrisk:
-  type: object
   description: C-2-2[B] 気象リスク・データモデル [TBD]
+  type: object
   properties:
     dataModelType:
       type: string

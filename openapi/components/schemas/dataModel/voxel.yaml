@@ -1,36 +1,41 @@
 voxel:
-  type: object
   description: C-2-2[B] 空間IDデータモデル
+  type: object
   required:
     - x
     - y
     - z
   properties:
     x:
-      type: integer
+      type: number
       description: x（東西方向）インデックス
       format: int32
       minimum: 0
       maximum: 2147483647
       example: 651
     y:
-      type: integer
+      type: number
       description: y（南北方向）インデックス
       format: int32
       minimum: 0
       maximum: 2147483647
       example: 3521
     z:
-      type: integer
+      type: number
       description: ズームレベル
       format: int32
       minimum: 0
-      maximum: 255
+      maximum: 2147483647
       example: 25
     f:
-      type: integer
+      type: number
       description: 鉛直方向インデックス
       format: int32
       minimum: 0
       maximum: 2147483647
       example: 0
+  example:
+    x: 12
+    y: 23
+    z: 24
+    f: 0

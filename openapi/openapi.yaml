@@ -5,18 +5,44 @@ info:
 servers:
   - url: https://api.server.test/v1
 paths:
-  # /facade:
-  #   $ref: "./paths/facade.yaml"
-  # /hdlanecenter:
-  #   $ref: "./paths/HDLaneCenter.yaml"
-  # /hdlaneline:
-  #   $ref: "./paths/HDLaneLine.yaml"
-  /{targetDataModel}:
-    $ref: "./paths/targetDataModel.yaml"
-  /map/{dataType}/{z}/{x}/{y}.pbf:
-    $ref: "./paths/map.yaml"
+  /facade:
+    $ref: "./paths/Facade.yaml"
+  /hdlanecenter:
+    $ref: "./paths/HDLaneCenter.yaml"
+  /hdlaneline:
+    $ref: "./paths/HDLaneLine.yaml"
+  /hdroadedge:
+    $ref: "./paths/HDRoadEdge.yaml"
+  /hdintersection:
+    $ref: "./paths/HDIntersection.yaml"
+  /hdpavementmarking:
+    $ref: "./paths/HDPavementMarking.yaml"
+  /hdsign:
+    $ref: "./paths/HDSign.yaml"
+  /traffic:
+    $ref: "./paths/Traffic.yaml"
+  /trafficregulation:
+    $ref: "./paths/TrafficRegulation.yaml"
+  /weatherrisk:
+    $ref: "./paths/WeatherRisk.yaml"
   /pointcloud:
     $ref: "./paths/PointCloud.yaml"
+  /period:
+    $ref: "./paths/Period.yaml"
+  /vehicle:
+    $ref: "./paths/Vehicle.yaml"
+  /roadlinkid:
+    $ref: "./paths/RoadLinkId.yaml"
+  /roadlinkids:
+    $ref: "./paths/RoadLinkIds.yaml"
+  /roadlink:
+    $ref: "./paths/RoadLink.yaml"
+  /voxels:
+    $ref: "./paths/Voxels.yaml"
+  # /{targetDataModel}:
+  #   $ref: "./paths/targetDataModel.yaml"
+  /map/{dataType}/{z}/{x}/{y}.pbf:
+    $ref: "./paths/map.yaml"
   /login:
     $ref: "./paths/login.yaml"
 components:
@@ -25,38 +51,56 @@ components:
       $ref: "./components/schemas/authentication/information.yaml#/information"
     authentication.Token:
       $ref: "./components/schemas/authentication/token.yaml#/token"
-    dataModel.bbox:
+    dataModel.BBox:
       $ref: "./components/schemas/dataModel/bbox.yaml#/bbox"
-    dataModel.voxel:
+    dataModel.Voxel:
       $ref: "./components/schemas/dataModel/voxel.yaml#/voxel"
-    dataModel.mesh:
+    dataModel.Voxels:
+      $ref: "./components/schemas/dataModel/Voxels.yaml#/voxels"
+    dataModel.Mesh:
       $ref: "./components/schemas/dataModel/mesh.yaml#/mesh"
-    dataModel.city:
+    dataModel.City:
       $ref: "./components/schemas/dataModel/city.yaml#/city"
-    dataModel.roadlink:
-      $ref: "./components/schemas/dataModel/roadlink.yaml#/roadlink"
-    dataModel.reg:
+    dataModel.RoadNode:
+      $ref: "./components/schemas/dataModel/RoadNode.yaml#/roadnode"
+    dataModel.RoadLinkId:
+      $ref: "./components/schemas/dataModel/RoadLinkId.yaml#/roadlinkid"
+    dataModel.RoadLinkIds:
+      $ref: "./components/schemas/dataModel/RoadLinkIds.yaml#/roadlinkids"
+    dataModel.RoadLink:
+      $ref: "./components/schemas/dataModel/RoadLink.yaml#/roadlink"
+    dataModel.Reg:
       $ref: "./components/schemas/dataModel/reg.yaml#/reg"
-    dataModel.facade:
+    dataModel.Coordinate:
+      $ref: "./components/schemas/dataModel/Coordinate.yaml#/coordinate"
+    dataModel.Coordinates:
+      $ref: "./components/schemas/dataModel/Coordinates.yaml#/coordinates"
+    dataModel.Facade:
       $ref: "./components/schemas/dataModel/Facade.yaml#/facade"
-    dataModel.hdlanecenter:
-      $ref: "./components/schemas/dataModel/hdlanecenter.yaml#/hdlanecenter"
-    dataModel.hdlaneline:
+    dataModel.HDLaneCenter:
+      $ref: "./components/schemas/dataModel/HDLaneCenter.yaml#/hdlanecenter"
+    dataModel.HDLaneLine:
       $ref: "./components/schemas/dataModel/HDLaneLine.yaml#/hdlaneline"
-    dataModel.hdroadedge:
+    dataModel.HDRoadEdge:
       $ref: "./components/schemas/dataModel/HDRoadEdge.yaml#/hdroadedge"
-    dataModel.hdintersection:
+    dataModel.HDIntersection:
       $ref: "./components/schemas/dataModel/HDIntersection.yaml#/hdintersection"
-    dataModel.hdpavementmarking:
+    dataModel.HDPavementMarking:
       $ref: "./components/schemas/dataModel/HDPavementMarking.yaml#/hdpavementmarking"
-    dataModel.hdsign:
+    dataModel.HDSign:
       $ref: "./components/schemas/dataModel/HDSign.yaml#/hdsign"
-    dataModel.traffic:
+    dataModel.Traffic:
       $ref: "./components/schemas/dataModel/Traffic.yaml#/traffic"
-    dataModel.trafficregulation:
+    dataModel.TrafficRegulation:
       $ref: "./components/schemas/dataModel/TrafficRegulation.yaml#/trafficregulation"
-    dataModel.weatherrisks:
+    dataModel.WeatherRisk:
       $ref: "./components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
+    dataModel.PointCloud:
+      $ref: "./components/schemas/dataModel/PointCloud.yaml#/pointcloud"
+    dataModel.Period:
+      $ref: "./components/schemas/dataModel/Period.yaml#/period"
+    dataModel.Vehicle:
+      $ref: "./components/schemas/dataModel/Vehicle.yaml#/vehicle"
   securitySchemes:
     ApiKeyAuth:
       type: apiKey

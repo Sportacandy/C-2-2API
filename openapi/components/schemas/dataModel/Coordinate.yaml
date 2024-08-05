@@ -1,0 +1,14 @@
+coordinate:
+  description: C-2-2[B] 座標（緯度経度高度）データモデル
+  type: array
+  items:
+    type: number
+    format: double
+    minItems: 2
+    maxItems: 3
+    minimum: -100000000
+    maximum:  100000000
+    example:
+      - 139.681994465
+      - 35.50676814
+      - 1.274998954

@@ -1,0 +1,74 @@
+period:
+  description: C-2-2[B] 交期間（開始日時～終了日時・曜日）データモデル。
+  type: object
+  properties:
+    isValid:
+      description: 0=期間が無効の場合（期間指定が無い場合）, 1=期間が有効。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 1
+      example: 0
+    startMonth:
+      description: 開始月。1=1月～12=12月。毎月の場合は0。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 12
+      example: 0
+    startDay:
+      description: 開始日。0～31。(0=無効)
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 31
+      example: 23
+    startHour:
+      description: 開始時。0～23。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 23
+      example: 1
+    startMinutes:
+      description: 開始分。0～59。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 59
+      example: 30
+    endMonth:
+      description: 終了月。1=1月～12=12月。毎月の場合は0。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 12
+      example: 0
+    endDay:
+      description: 終了日。0～31。(0=無効)
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 31
+      example: 31
+    endHour:
+      description: 終了時。0～23。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 23
+      example: 23
+    endMinutes:
+      description: 終了分。0～59。
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 59
+      example: 30
+    dayOfWeek:
+      description: 曜日コード。1=月,2=火,3=水,4=木,5=金,6=土,7=日(渋滞情報の場合のみ＋祝日)
+      type: number
+      format: int32
+      minimum: 0
+      maximum: 7
+      example: 1

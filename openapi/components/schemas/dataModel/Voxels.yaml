@@ -1,0 +1,16 @@
+voxels:
+  description: C-2-2[B] 空間ID列データモデル
+  type: array
+  items:
+    $ref: "../dataModel/Voxel.yaml#/voxel"
+    minItems: 0
+    maxItems: 2147483647
+    example:
+      - x: 12
+        y: 23
+        z: 24
+        f: 0
+      - x: 13
+        y: 23
+        z: 24
+        f: 0

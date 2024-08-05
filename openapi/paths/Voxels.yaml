@@ -1,6 +1,6 @@
     get:
-      summary: C-2-2[B] 点群データモデル取得
-      description: 点群データモデルのデータを取得します。
+      summary: C-2-2[B] 空間ID列データモデル取得
+      description: 対応する空間ID列を取得します。
       parameters:
       - name: bbox
         in: query
@@ -33,26 +33,14 @@
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
-      - name: dataType
-        in: query
-        description: データ形式
-        schema:
-          type: string
-          enum:
-            - potree
-            - laz
-        example: potree # default=potree
       responses:
-        "206":
-          description: Partial Content
+        "200":
+          description: OK
           content:
-            multipart/byteranges:
+            application/json:
               schema:
-                description: 点群ファイル分割ダウンロードの1分割分のデータ
-                type: string
-                format: binary
-                minLength: 0
-                maxLength: 2147483647
+                oneOf:
+                - $ref: "../components/schemas/dataModel/Voxels.yaml#/voxels"
         "400":
           description: リクエスト入力形式不備
         "401":
