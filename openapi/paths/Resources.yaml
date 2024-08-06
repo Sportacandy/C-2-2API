@@ -1,0 +1,93 @@
+    get:
+      summary: C-2-2[B] 共有資源状態データモデル取得
+      description: 共有資源状態データモデルのデータを取得します。指定領域に含まれる、指定カテゴリの共有資源状態を取得します。
+      parameters:
+      - name: bbox
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/bbox.yaml#/bbox"
+      - name: voxel
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/voxel.yaml#/voxel"
+      - name: mesh
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/mesh.yaml#/mesh"
+      - name: city
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: roadlink
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
+      - name: roadName
+        in: query
+        description: 道路名称。道路名称絞り込み対象の場合に指定可能。
+        schema:
+          type: string
+      - name: category
+        in: query
+        description: 共有資源カテゴリ名
+        schema:
+          type: string
+          enum:
+            - evacuation
+            - mobilityhub
+      - name: keyFilter
+        in: query
+        description: 共有資源名フィルター。正規表現（PCRE）で指定。
+        schema:
+          type: string
+          minimum: 0
+          maximum: 4096
+          example: class4[0-9]*
+      - name: lowerBound
+        in: query
+        description: 共有資源状態値の下限値（包含）。値が整数として解釈できない文字列の場合にのみ有効。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 0
+      - name: upperBound
+        in: query
+        description: 共有資源状態値の上限値（排他）。値が整数として解釈できない文字列の場合にのみ有効。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 1
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: "../components/schemas/dataModel/Resources.yaml#/resources"
+        "400":
+          description: リクエスト入力形式不備
+        "401":
+          description: 認証トークン不備、有効期限切れ、アクセス権限無し
+    post:
+      summary: C-2-2[B] 共有資源状態データモデル設定
+      description: 共有資源状態データモデルのデータを設定します。指定カテゴリの共有資源状態を設定します。
+      requestBody:
+        description: Request Body
+        content:
+          application/json:
+            schema:
+                $ref: "../components/schemas/dataModel/Resources.yaml#/resources"
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+             schema:
+                $ref: "../components/schemas/dataModel/Resources.yaml#/resources"
+        "400":
+          description: リクエスト入力形式不備
+        "401":
+          description: 認証トークン不備、有効期限切れ、アクセス権限無し

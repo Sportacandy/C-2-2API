@@ -27,6 +27,10 @@ paths:
     $ref: "./paths/WeatherRisk.yaml"
   /pointcloud:
     $ref: "./paths/PointCloud.yaml"
+  /resources:
+    $ref: "./paths/Resources.yaml"
+  /fileattributes:
+    $ref: "./paths/FileAttributes.yaml"
   /period:
     $ref: "./paths/Period.yaml"
   /vehicle:
@@ -97,6 +101,10 @@ components:
       $ref: "./components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
     dataModel.PointCloud:
       $ref: "./components/schemas/dataModel/PointCloud.yaml#/pointcloud"
+    dataModel.Resources:
+      $ref: "./components/schemas/dataModel/Resources.yaml#/resources"
+    dataModel.FileAttributes:
+      $ref: "./components/schemas/dataModel/FileAttributes.yaml#/fileattributes"
     dataModel.Period:
       $ref: "./components/schemas/dataModel/Period.yaml#/period"
     dataModel.Vehicle:

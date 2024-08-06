@@ -1,11 +1,90 @@
 weatherrisk:
-  description: C-2-2[B] 気象リスク・データモデル [TBD]
+  description: C-2-2[B] 気象リスク・データモデル
   type: object
+  required:
+    - type
+    - features
   properties:
-    dataModelType:
+    type:
       type: string
-      description: データモデルタイプ
-      enum:
-        - test1
-        - test2
-      example: test1
+      description: フィーチャID
+      minLength: 1
+      maxLength: 20
+      example: FeatureCollection
+    features:
+      type: array
+      description: フィーチャ配列
+      items:
+        type: object
+        description: フィーチャ要素
+        minItems: 0
+        maxItems: 2147483647
+        properties:
+          type:
+            type: string
+            minLength: 1
+            maxLength: 20
+            example: Feature
+          geometry:
+            type: object
+            properties:
+              type:
+                type: string
+                description: ジオメトリ形式
+                minLength: 1
+                maxLength: 20
+                example: Point
+              coordinates:
+                $ref: "../dataModel/Coordinates.yaml#/coordinates"
+          properties:
+            type: object
+            properties:
+              hdRoadSegmentIds:
+                description: HDロードセグメントID列。該当値が無い場合は-1。
+                type: array
+                items:
+                  type: number
+                  format: int32
+                  minimum: -2147483648
+                  maximum: 2147483647
+                  example: 18
+              ordinalId:
+                description: HD区画線番号。該当値が無い場合は-1。
+                type: number
+                format: int32
+                minimum: -2147483648
+                maimum: 2147483647
+                example: 1
+              windSpeeds:
+                description: 風速(m/s)配列
+                type: array
+                items:
+                  type: number
+                  format: double
+                  minLength: 0
+                  maxLength: 2147483647
+                  example:
+                    - 0.5
+                    - 1.2
+              windDirections:
+                description: 風向配列。北=0度,東=90度,南=180度,西=270度。
+                type: array
+                items:
+                  type: number
+                  format: double
+                  minLength: 0
+                  maxLength: 2147483647
+                  example:
+                    - 35.8
+                    - 47.2
+              waterfilms:
+                description: 水膜厚(mm)配列
+                type: array
+                items:
+                  type: number
+                  format: double
+                  minLength: 0
+                  maxLength: 2147483647
+                  example:
+                    - 0.31
+                    - 0.63

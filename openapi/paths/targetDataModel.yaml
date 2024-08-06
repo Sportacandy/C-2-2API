@@ -56,6 +56,45 @@
           minimum: 0
           maximum: 255
           example: 25
+      - name: fileName
+        in: query
+        description: ファイル名。ファイル属性取得の場合に指定可能。
+        schema:
+          type: string
+          minLength: 1
+          maxLength: 4096
+      - name: category
+        in: query
+        description: 共有資源カテゴリ名
+        schema:
+          type: string
+          enum:
+            - evacuation
+            - mobilityhub
+      - name: keyFilter
+        in: query
+        description: 共有資源名フィルター。正規表現（PCRE）で指定。
+        schema:
+          type: string
+          minimum: 0
+          maximum: 4096
+          example: class4[0-9]*
+      - name: lowerBound
+        in: query
+        description: 共有資源状態値の下限値（包含）。値が整数として解釈できない文字列の場合にのみ有効。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 0
+      - name: upperBound
+        in: query
+        description: 共有資源状態値の上限値（排他）。値が整数として解釈できない文字列の場合にのみ有効。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 1
       responses:
         "200":
           description: OK
@@ -79,6 +118,8 @@
                 - $ref: "../components/schemas/dataModel/TrafficRegulation.yaml#/trafficregulation"
                 - $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
                 - $ref: "../components/schemas/dataModel/PointCloud.yaml#/pointcloud"
+                - $ref: "../components/schemas/dataModel/Resources.yaml#/resources"
+                - $ref: "../components/schemas/dataModel/FileAttributes.yaml#/fileattributes"
                 - $ref: "../components/schemas/dataModel/RoadLinks.yaml#/roadlinks"
                 - $ref: "../components/schemas/dataModel/Voxel.yaml#/voxel"
                 - $ref: "../components/schemas/dataModel/Voxels.yaml#/voxels"
@@ -95,6 +136,8 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
+        "202":
+          description: Accepted (for WeatherRisk)
         "206":
           description: Partial Content
           content:

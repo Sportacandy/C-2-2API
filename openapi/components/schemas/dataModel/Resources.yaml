@@ -1,0 +1,41 @@
+resources:
+  description: C-2-2[B] 共有資源状態データモデル
+  type: object
+  properties:
+    category:
+      type: string
+      description: 共有資源カテゴリ名
+      enum:
+        - evacuation
+        - mobilityhub
+      example: evacuation
+    statuses:
+      type: array
+      description: 共有資源状態配列
+      items:
+        type: object
+        description: 共有資源状態
+        minItems: 0
+        maxItems: 2147483647
+        properties:
+          key:
+            type: string
+            description: 共有資源名
+            minLength: 1
+            maxLength: 20
+            example: Feature
+          value:
+            type: string
+            description: 共有資源値。任意文字列を指定可能だが、整数として解釈できる文字列の場合は、lowerBound/upperBoundでフィルタリング可能。
+            minLength: 0
+            maxLength: 4096
+            example: 0
+          coordinates:
+            $ref: "../dataModel/Coordinates.yaml#/coordinates"
+      example:
+        - key: class40t
+          value: 0
+          coordinates: [ 139.681994465, 35.506768140, 1.274998954 ]
+        - key: class2t
+          value: 1
+          coordinates: [ 139.681994460, 35.506768141, 1.274998944 ]

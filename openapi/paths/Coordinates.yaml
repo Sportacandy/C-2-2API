@@ -1,27 +1,27 @@
     get:
-      summary: C-2-2[B] 気象リスクデータモデル取得
-      description: 気象リスクデータモデルのデータを取得します。
+      summary: C-2-2[B] 座標列(LineString)データモデル取得
+      description: 対応する座標列(LineString)を取得します。
       parameters:
       - name: bbox
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/bbox.yaml#/bbox"
+          $ref: "../components/schemas/dataModel/Bbox.yaml#/bbox"
       - name: voxel
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/voxel.yaml#/voxel"
+          $ref: "../components/schemas/dataModel/Voxel.yaml#/voxel"
       - name: mesh
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/mesh.yaml#/mesh"
+          $ref: "../components/schemas/dataModel/Mesh.yaml#/mesh"
       - name: city
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: roadlink
+          $ref: "../components/schemas/dataModel/City.yaml#/city"
+      - name: roadlinkid
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
+          $ref: "../components/schemas/dataModel/RoadLinkId.yaml#/roadlinkid"
       - name: date
         in: query
         description: タイムスタンプ
@@ -40,13 +40,7 @@
             application/json:
               schema:
                 oneOf:
-                - $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
-        "202":
-          description: Accepted
-          content:
-            application/json:
-              schema:
-                $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
+                - $ref: "../components/schemas/dataModel/Coordinates.yaml#/coordinates"
         "400":
           description: リクエスト入力形式不備
         "401":
