@@ -33,6 +33,15 @@
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
+      - name: zoomlevel
+        in: query
+        description: ズームレベル（道路リンク→空間ID 変換用）
+        schema:
+          type: number
+          format: int32
+          minimum: 0
+          maximum: 255
+          example: 25
       responses:
         "200":
           description: OK
