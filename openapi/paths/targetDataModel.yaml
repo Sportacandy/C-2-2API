@@ -36,7 +36,8 @@
         schema:
           type: string
           format: date-time
-      - name: roadName
+          example: 2024-01-23T11:22:33Z
+     - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
@@ -95,6 +96,14 @@
           minimum: -2147483648
           maximum: 2147483647
           example: 1
+      - name: requestId
+        in: query
+        description: 汎用リクエストID。気象リスク・シミュレーションID等。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 123
       responses:
         "200":
           description: OK
@@ -137,7 +146,11 @@
                 minLength: 1
                 maxLength: 2147483647
         "202":
-          description: Accepted (for WeatherRisk)
+          description: Accepted / Job Started / Job Completed
+          content:
+            application/json:
+              schema:
+                $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
         "206":
           description: Partial Content
           content:

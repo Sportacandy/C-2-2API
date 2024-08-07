@@ -33,6 +33,14 @@
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
+      - name: requestId
+        in: query
+        description: 気象リスク・シミュレーションID。指定されたIDのシミュレーション実行状態を取得する。
+        schema:
+          type: number
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 123
       responses:
         "200":
           description: OK
@@ -42,11 +50,11 @@
                 oneOf:
                 - $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
         "202":
-          description: Accepted
+          description: Accepted / Job Started / Job Completed
           content:
             application/json:
               schema:
-                $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
+                $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
         "400":
           description: リクエスト入力形式不備
         "401":
