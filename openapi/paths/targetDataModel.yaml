@@ -57,6 +57,15 @@
           minimum: 0
           maximum: 255
           example: 25
+      - name: linkType
+        in: query
+        description: 道路リンク種別（省略時はdrm)
+        schema:
+          type: string
+          enum:
+            - drm
+            - vics
+          example: drm
       - name: fileName
         in: query
         description: ファイル名。ファイル属性取得の場合に指定可能。
