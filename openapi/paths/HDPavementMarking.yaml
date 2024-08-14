@@ -24,23 +24,32 @@
           $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: date
         in: query
-        description: タイムスタンプ
+        description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
         schema:
           type: string
           format: date-time
+          example: 2024-01-23T11:22:33Z
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
+          minLength: 0
+          maxLength: 4096
       responses:
-        "200":
+        200:
           description: OK
           content:
             application/json:
               schema:
                 $ref: "../components/schemas/dataModel/HDPavementMarking.yaml#/hdpavementmarking"
-        "400":
+            application/vnd.mapbox-vector-tile:
+              schema:
+                type: string
+                format: binary
+                minLength: 1
+                maxLength: 2147483647
+        400:
           description: リクエスト入力形式不備
-        "401":
+        401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し

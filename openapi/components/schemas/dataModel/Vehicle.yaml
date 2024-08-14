@@ -54,10 +54,10 @@ vehicle:
     types:
       description: 車種別規制一覧。
       type: array
+      minItems: 0
+      maxItems: 2147483647
       items:
         type: object
-        minItems: 0
-        maxItems: 2147483647
         properties:
           code:
             description: 車種別規制コード。
@@ -76,10 +76,15 @@ vehicle:
           vehicleMasters:
             description: 車種コード一覧。全車種の場合は空配列。
             type: array
+            minItems: 0
+            maxItems: 2147483647
             items:
-              minItems: 0
-              maxItems: 2147483647
               type: string
               minLength: 0
               maxLength: 2147483647
+            example:
+              - 1
+              - 2
+              - 3
+
 

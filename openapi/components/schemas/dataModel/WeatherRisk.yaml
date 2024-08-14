@@ -14,11 +14,11 @@ weatherrisk:
     features:
       type: array
       description: フィーチャ配列
+      minItems: 0
+      maxItems: 2147483647
       items:
         type: object
         description: フィーチャ要素
-        minItems: 0
-        maxItems: 2147483647
         properties:
           type:
             type: string
@@ -42,6 +42,8 @@ weatherrisk:
               hdRoadSegmentIds:
                 description: HDロードセグメントID列。該当値が無い場合は-1。
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: int32
@@ -58,33 +60,39 @@ weatherrisk:
               windSpeeds:
                 description: 風速(m/s)配列
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: double
-                  minLength: 0
-                  maxLength: 2147483647
+                  minimum: 0
+                  maximum: 2147483647
                   example:
                     - 0.5
                     - 1.2
               windDirections:
                 description: 風向配列。北=0度,東=90度,南=180度,西=270度。
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: double
-                  minLength: 0
-                  maxLength: 2147483647
+                  minimum: 0
+                  maximum: 360
                   example:
                     - 35.8
                     - 47.2
               waterfilms:
                 description: 水膜厚(mm)配列
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: double
-                  minLength: 0
-                  maxLength: 2147483647
+                  minimum: 0
+                  maximum: 2147483647
                   example:
                     - 0.31
                     - 0.63

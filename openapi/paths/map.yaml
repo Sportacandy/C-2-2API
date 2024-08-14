@@ -49,8 +49,15 @@
           minimum: 0
           maximum: 2147483647
           example: 3229
+      - name: date
+        in: query
+        description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
+        schema:
+          type: string
+          format: date-time
+          example: 2024-01-23T11:22:33Z
       responses:
-        "200":
+        200:
           description: OK
           content:
             application/vnd.mapbox-vector-tile:
@@ -59,7 +66,7 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
-        "400":
+        400:
           description: リクエスト入力形式不備
-        "401":
+        401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し

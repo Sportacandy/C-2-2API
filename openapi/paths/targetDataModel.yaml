@@ -32,7 +32,7 @@
           $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: date
         in: query
-        description: タイムスタンプ
+        description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
         schema:
           type: string
           format: date-time
@@ -86,14 +86,15 @@
         description: 共有資源名フィルター。正規表現（PCRE）で指定。
         schema:
           type: string
-          minimum: 0
-          maximum: 4096
+          minLength: 0
+          maxLength: 4096
           example: class4[0-9]*
       - name: lowerBound
         in: query
         description: 共有資源状態値の下限値（包含）。値が整数として解釈できない文字列の場合にのみ有効。
         schema:
           type: number
+          format: int32
           minimum: -2147483648
           maximum: 2147483647
           example: 0
@@ -102,6 +103,7 @@
         description: 共有資源状態値の上限値（排他）。値が整数として解釈できない文字列の場合にのみ有効。
         schema:
           type: number
+          format: int32
           minimum: -2147483648
           maximum: 2147483647
           example: 1
@@ -110,11 +112,20 @@
         description: 汎用リクエストID。気象リスク・シミュレーションID等。
         schema:
           type: number
+          format: int32
           minimum: -2147483648
           maximum: 2147483647
           example: 123
+      - name: geodetic
+        in: query
+        description: 測地系。省略時はJGD2011が仮定される。
+        schema:
+          type: string
+          minLength: 0
+          maxLength: 4096
+          example: JGD2011
       responses:
-        "200":
+        200:
           description: OK
           content:
             application/json:
@@ -154,13 +165,13 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
-        "202":
+        202:
           description: Accepted / Job Started / Job Completed
           content:
             application/json:
               schema:
                 $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
-        "206":
+        206:
           description: Partial Content
           content:
             multipart/byteranges:
@@ -170,5 +181,5 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
-        "400":
+        400:
           description: Not available

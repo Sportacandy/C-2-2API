@@ -1,12 +1,10 @@
 coordinates:
   description: C-2-2[B] 座標列(LineString)データモデル
   type: array
+  minItems: 0
+  maxItems: 2147483647
   items:
-    type: array
-    minItems: 0
-    maxItems: 2147483647
-    items:
-       $ref: "../dataModel/Coordinate.yaml#/coordinate"
+      $ref: "../dataModel/Coordinate.yaml#/coordinate"
   example:
     - [ 139.681994465, 35.506768140, 1.274998954 ]
     - [ 139.681985082, 35.506773265, 1.277230526 ]

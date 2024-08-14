@@ -14,11 +14,11 @@ hdlanecenter:
     features:
       type: array
       description: フィーチャ配列
+      minItems: 0
+      maxItems: 2147483647
       items:
         type: object
         description: フィーチャ要素
-        minItems: 0
-        maxItems: 2147483647
         properties:
           type:
             type: string
@@ -105,6 +105,7 @@ hdlanecenter:
               hasNoturn:
                 description: 指定外進入禁止対象。SDマップと関連があり、かつ規制対象の場合は1。そうでない場合は0。
                 type: number
+                format: int32
                 minimum: 0
                 maximum: 1
                 example: 0

@@ -14,11 +14,11 @@ hdlaneline:
     features:
       type: array
       description: フィーチャ配列
+      minItems: 0
+      maxItems: 2147483647
       items:
         type: object
         description: フィーチャ要素
-        minItems: 0
-        maxItems: 2147483647
         properties:
           type:
             type: string

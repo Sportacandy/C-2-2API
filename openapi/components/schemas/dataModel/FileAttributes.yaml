@@ -1,41 +1,78 @@
 fileattributes:
   description: C-2-2[B] ファイル属性データモデル
-  type: object
-  properties:
-    fileName:
-      type: string
-      description: ファイル名
-      minLength: 1
-      maxLength: 4096
-      example: pointcouddir/pointcloudfile.potree
-    attributes:
-      type: array
-      description: 共有資源状態配列
-      items:
-        type: object
-        description: 共有資源状態
-        minItems: 0
-        maxItems: 2147483647
-        properties:
-          key:
-            type: string
-            description: 属性名
-            minLength: 1
-            maxLength: 20
-            example: Feature
-          value:
-            type: string
-            description: 属性値
-            minLength: 0
-            maxLength: 4096
-            example: 0
-          coordinates:
-            $ref: "../dataModel/Coordinates.yaml#/coordinates"
-      example:
-        - key: Published
-          value: 2022-01-02T11:22:34
-        - key: Captured
-          value: 2022-05-012T20:30:40
-        - key: size
-          value: 3456789
+  type: array
+  minItems: 0
+  maxItems: 2147483647
+  items:
+    type: object
+    properties:
+      fileName:
+        type: string
+        description: ファイル名
+        minLength: 1
+        maxLength: 4096
+        example: pointcouddir/pointcloudfile.potree
+      type:
+        type: string
+        description: ファイル種別
+        minLength: 1
+        maxLength: 4096
+        example: potree
+      size:
+        type: number
+        description: ファイルサイズ（バイト）
+        format: int32
+        minimum: 0
+        maximum: 2147483647
+        example: 111222333
+      created:
+        type: string
+        description: 作成日時
+        format: date-time
+        example: 2024-01-23T11:22:33Z
+      updated:
+        type: string
+        description: 更新日時
+        format: date-time
+        example: 2024-01-23T11:22:33Z
+      accessed:
+        type: string
+        description: アクセス日時
+        format: date-time
+        example: 2024-01-23T11:22:33Z
+      compressed:
+        type: number
+        description: 圧縮済み。0=無圧縮, 1=圧縮済
+        format: integer
+        minimum: 0
+        maximum: 1
+        example: 0
+      version:
+        type: number
+        description: バージョン番号
+        format: int32
+        minimum: 0
+        maximum: 2147483647
+        example: 1
+      coordinates:
+        $ref: "../dataModel/Coordinates.yaml#/coordinates"
+    example:
+      - fileName: pointcouddir/pointcloudfile.potree
+        type: potree
+        size: 111222333
+        created: 2024-01-23T11:22:33.000Z
+        updated: 2024-01-23T11:22:33.000Z
+        accessed: 2024-01-23T11:22:33.000Z
+        compressed: 0
+        version: 12
+        coordinates: [ 139.681994465, 35.506768140, 1.274998954 ]
+      - fileName: pointcouddir/pointcloudfile.laz
+        type: laz
+        size: 444555666
+        created: 2024-02-23T11:22:33.000Z
+        updated: 2024-02-23T11:22:33.000Z
+        accessed: 2024-02-23T11:22:33.000Z
+        compressed: 1
+        version: 23
+        coordinates: [ 139.681985082, 35.506773265, 1.277230526 ]
 

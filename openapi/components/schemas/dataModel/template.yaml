@@ -27,6 +27,7 @@ datamodelname:
           example: "78aa302c-1600-44b3-a331-e4659c0b28a1"
         value:
           type: number
+          format: int32
           minimum: 0
           maximum: 999999999
           description: データモデル要素値

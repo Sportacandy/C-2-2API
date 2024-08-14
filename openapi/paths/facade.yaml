@@ -1,13 +1,13 @@
     get:
       summary: C-2-2[B] 直接アクセス・ポイント情報取得
-      description: H直接アクセス・ポイント情報データモデルのデータを取得します。
+      description: 直接アクセス・ポイント情報データモデルのデータを取得します。
       responses:
-        "200":
+        200:
           description: OK
           content:
             application/json:
               schema:
                 oneOf:
                 - $ref: "../components/schemas/dataModel/Facade.yaml#/facade"
-        "401":
+        401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し

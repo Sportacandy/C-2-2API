@@ -14,11 +14,11 @@ hdsign:
     features:
       type: array
       description: フィーチャ配列
+      minItems: 0
+      maxItems: 2147483647
       items:
         type: object
         description: フィーチャ要素
-        minItems: 0
-        maxItems: 2147483647
         properties:
           type:
             type: string
@@ -63,37 +63,39 @@ hdsign:
               roadSegmentIds:
                 description: HD道路セグメントID配列。SDマップと関連がない場合は空配列（[]）。
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: int32
-                  minItems: 0
-                  maxItems: 2147483647
                   minimum: -2147483648
                   maximum: 2147483647
-                  example:
-                    - 1010000
-                    - 1010001
+                example:
+                  - 1010000
+                  - 1010001
               classCodes:
                 description: 道路種別コード配列。アンダースコア（_）繋ぎ(例："_1_")。SDマップと関連がない場合は空配列（[]）。
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: string
                   minLength: 0
                   maxLength: 2147483647
-                  example:
-                    - "_1_"
-                    - "_2_4_"
+                example:
+                  - "_1_"
+                  - "_2_4_"
               nameCodes:
                 description: 路線名称コード配列。SDマップと関連がない、またはSD道路名が紐づいていない場合は空配列（[]）。
                 type: array
+                minItems: 0
+                maxItems: 2147483647
                 items:
                   type: number
                   format: int32
-                  minItems: 0
-                  maxItems: 2147483647
                   minimum: -2147483648
                   maximum: 2147483647
-                  example:
-                    - 123
-                    - 122
-                    - 128
+                example:
+                  - 123
+                  - 122
+                  - 128

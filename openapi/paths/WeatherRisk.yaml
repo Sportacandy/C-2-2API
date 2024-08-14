@@ -24,38 +24,47 @@
           $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: date
         in: query
-        description: タイムスタンプ
+        description: タイムスタンプ。指定された日時でシミュレーションを実行する。
         schema:
           type: string
           format: date-time
+          example: 2024-01-23T11:22:33Z
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
         schema:
           type: string
+          minLength: 0
+          maxLength: 4096
       - name: requestId
         in: query
         description: 気象リスク・シミュレーションID。指定されたIDのシミュレーション実行状態を取得する。
         schema:
           type: number
+          format: int32
           minimum: -2147483648
           maximum: 2147483647
           example: 123
       responses:
-        "200":
+        200:
           description: OK
           content:
             application/json:
               schema:
-                oneOf:
-                - $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
-        "202":
+                $ref: "../components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
+            application/vnd.mapbox-vector-tile:
+              schema:
+                type: string
+                format: binary
+                minLength: 1
+                maxLength: 2147483647
+        202:
           description: Accepted / Job Started / Job Completed
           content:
             application/json:
               schema:
                 $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
-        "400":
+        400:
           description: リクエスト入力形式不備
-        "401":
+        401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し

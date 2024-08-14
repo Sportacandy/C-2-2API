@@ -1,10 +1,10 @@
 trafficregulation:
   description: C-2-2[B] 交通規制情報データモデル
   type: array
+  minItems: 0
+  maxItems: 2147483647
   items:
     type: object
-    minItems: 0
-    maxItems: 2147483647
     properties:
       roadSegmentId:
         description: HDロードセグメントID
@@ -62,10 +62,10 @@ trafficregulation:
       oneways:
         description: 一方通行一覧。存在しない場合は空配列。
         type: array
+        minItems: 0
+        maxItems: 2147483647
         items:
           type: object
-          minItems: 0
-          maxItems: 2147483647
           properties:
             period:
               description: 規制開始日時～終了日時・曜日。
@@ -76,10 +76,10 @@ trafficregulation:
       noPasses:
         description: 通行禁止一覧。存在しない場合は空配列。
         type: array
+        minItems: 0
+        maxItems: 2147483647
         items:
           type: object
-          minItems: 0
-          maxItems: 2147483647
           properties:
             nopassCode:
               description: 通行禁止種別コード。1=条件無し通行禁止,2=条件付き通行禁止,3=通行不可,4=条件無し通行禁止（関係者以外）,5=条件付き通行禁止（関係者以外）
@@ -97,16 +97,16 @@ trafficregulation:
       noTurns:
         description: 指定方向外進入禁止一覧。
         type: array
+        minItems: 0
+        maxItems: 2147483647
         items:
           type: object
-          minItems: 0
-          maxItems: 2147483647
           properties:
             regs:
               type: array
+              minItems: 0
+              maxItems: 2147483647
               items:
-                minItems: 0
-                maxItems: 2147483647
                 type: object
                 properties:
                   linkId:

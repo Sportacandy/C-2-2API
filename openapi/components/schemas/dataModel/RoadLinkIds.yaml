@@ -1,10 +1,10 @@
 roadlinkids:
   description: C-2-2[B] 道路リンクID列データモデル
   type: array
+  minItems: 0
+  maxItems: 2147483647
   items:
     $ref: "../dataModel/RoadLinkId.yaml#/roadlinkid"
-    minItems: 0
-    maxItems: 2147483647
   example:
     - 2301219
     - 2301220
