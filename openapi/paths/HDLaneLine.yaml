@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] HD地図区画線データモデル取得
       description: HD地図区画線データモデルのデータを取得します。
       parameters:

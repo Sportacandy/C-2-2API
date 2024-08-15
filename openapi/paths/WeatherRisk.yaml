@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 気象リスクデータモデル取得
       description: 気象リスクデータモデルのデータを取得します。
       parameters:

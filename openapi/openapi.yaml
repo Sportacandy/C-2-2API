@@ -31,24 +31,22 @@ paths:
     $ref: "./paths/Resources.yaml"
   /fileattributes:
     $ref: "./paths/FileAttributes.yaml"
-  # /period:
-  #   $ref: "./paths/Period.yaml"
-  # /vehicle:
-  #   $ref: "./paths/Vehicle.yaml"
-  # /roadlinkid:
-  #   $ref: "./paths/RoadLinkId.yaml"
   /roadlinkids:
     $ref: "./paths/RoadLinkIds.yaml"
-  # /roadlink:
-  #   $ref: "./paths/RoadLink.yaml"
   /voxels:
     $ref: "./paths/Voxels.yaml"
+  /coordinates:
+    $ref: "./paths/Coordinates.yaml"
+  /bbox:
+    $ref: "./paths/BBox.yaml"
   # /{targetDataModel}:
   #   $ref: "./paths/targetDataModel.yaml"
   /map/{dataType}/{z}/{x}/{y}.pbf:
     $ref: "./paths/map.yaml"
   /login:
     $ref: "./paths/login.yaml"
+  /auth:
+    $ref: "./paths/auth.yaml"
 components:
   schemas:
     authentication.Information:
@@ -57,8 +55,6 @@ components:
       $ref: "./components/schemas/authentication/token.yaml#/token"
     dataModel.BBox:
       $ref: "./components/schemas/dataModel/bbox.yaml#/bbox"
-    # dataModel.Voxel:
-    #   $ref: "./components/schemas/dataModel/voxel.yaml#/voxel"
     dataModel.Voxels:
       $ref: "./components/schemas/dataModel/Voxels.yaml#/voxels"
     dataModel.Mesh:
@@ -67,16 +63,12 @@ components:
       $ref: "./components/schemas/dataModel/city.yaml#/city"
     dataModel.RoadNode:
       $ref: "./components/schemas/dataModel/RoadNode.yaml#/roadnode"
-    # dataModel.RoadLinkId:
-    #   $ref: "./components/schemas/dataModel/RoadLinkId.yaml#/roadlinkid"
     dataModel.RoadLinkIds:
       $ref: "./components/schemas/dataModel/RoadLinkIds.yaml#/roadlinkids"
     dataModel.RoadLink:
       $ref: "./components/schemas/dataModel/RoadLink.yaml#/roadlink"
     dataModel.Reg:
       $ref: "./components/schemas/dataModel/reg.yaml#/reg"
-    # dataModel.Coordinate:
-    #   $ref: "./components/schemas/dataModel/Coordinate.yaml#/coordinate"
     dataModel.Coordinates:
       $ref: "./components/schemas/dataModel/Coordinates.yaml#/coordinates"
     dataModel.Facade:

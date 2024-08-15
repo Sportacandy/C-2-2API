@@ -1,8 +1,9 @@
     post:
       tags:
-      - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
-      summary: C-2-2[B] ログイン
-      description: ID/パスワードによりログイン処理を行います。データ流通システムのログインAPIとは異なるC-2-2[B]独自API。
+      - データ流通システム ユーザ認証
+      summary: ユーザ認証システム（C-2-2[B]ログインAPIとパスが被るため書面上は便宜的にパスを変更）
+      description: |-
+        ID/パスワードによりログイン処理を行います。
       requestBody:
         description: Request Body
         content:

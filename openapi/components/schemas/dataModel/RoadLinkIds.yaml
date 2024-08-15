@@ -1,5 +1,5 @@
 roadlinkids:
-  description: C-2-2[B] 道路リンクID列データモデル
+  description: C-2-2[B] 道路リンクID列データモデル（データ流通システム取扱対象外）
   type: array
   minItems: 0
   maxItems: 2147483647

@@ -1,5 +1,5 @@
 roadlink:
-  description: C-2-2[B] SD道路リンクデータモデル
+  description: C-2-2[B] SD道路リンクデータモデル（データ流通システム取扱対象外）
   type: object
   properties:
     type:

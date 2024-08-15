@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
       summary: C-2-2[B] 空間ID列データモデル取得
       description: 対応する空間ID列を取得します。
       parameters:
@@ -54,6 +56,14 @@
           minimum: 0
           maximum: 255
           example: 25
+      - name: geodetic
+        in: query
+        description: 測地系。省略時はJGD2011が仮定される。
+        schema:
+          type: string
+          minLength: 0
+          maxLength: 4096
+          example: JGD2011
       responses:
         200:
           description: OK

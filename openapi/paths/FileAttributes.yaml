@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] ファイル属性データモデル取得
       description: ファイル属性データモデルのデータを取得します。
       parameters:

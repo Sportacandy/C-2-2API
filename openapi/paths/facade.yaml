@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 直接アクセス・ポイント情報取得
       description: 直接アクセス・ポイント情報データモデルのデータを取得します。
       responses:

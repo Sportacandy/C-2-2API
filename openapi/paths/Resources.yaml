@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 共有資源状態データモデル取得
       description: 共有資源状態データモデルのデータを取得します。指定領域に含まれる、指定カテゴリの共有資源状態を取得します。
       parameters:
@@ -74,16 +76,18 @@
           description: リクエスト入力形式不備
         401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し
-    post:
+    put:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 共有資源状態データモデル設定
       description: 共有資源状態データモデルのデータを設定します。指定カテゴリの共有資源状態を設定します。
       requestBody:
         description: Request Body
+        required: true
         content:
           application/json:
             schema:
                 $ref: "../components/schemas/dataModel/Resources.yaml#/resources"
-        required: true
       responses:
         200:
           description: OK
@@ -96,6 +100,8 @@
         401:
           description: 認証トークン不備、有効期限切れ、アクセス権限無し
     delete:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 共有資源状態データモデル削除
       description: 共有資源状態データモデルのデータを削除します。
       parameters:

@@ -1,4 +1,6 @@
     get:
+      tags:
+      - C-2-2[B] 車両情報連携システム
       summary: C-2-2[B] 交通渋滞情報データモデル取得
       description: 交通渋滞情報データモデルのデータを取得します。
       parameters:
@@ -24,7 +26,7 @@
           $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: date
         in: query
-        description: タイムスタンプ
+        description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
         schema:
           type: string
           format: date-time

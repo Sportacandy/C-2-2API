@@ -1,5 +1,5 @@
 roadnode:
-  description: C-2-2[B] SD道路ノード データモデル
+  description: C-2-2[B] SD道路ノード データモデル（データ流通システム取扱対象外）
   type: object
   properties:
     type:
