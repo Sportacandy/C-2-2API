@@ -1,6 +1,6 @@
     get:
       tags:
-      - C-2-2[B] 車両情報連携システム
+      - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
       summary: C-2-2[B] HD地図車線中心線・交通規制情報データモデル取得
       description: HD地図車線中心線・静的交通規制情報データモデルのデータを取得します。
       parameters:
@@ -44,7 +44,7 @@
           $ref: "../components/schemas/dataModel/reg.yaml#/reg"
       responses:
         200:
-          description: OK【mapbox-vector-tileは直接アクセス・ポイント経由でのみ利用可能】        
+          description: OK
           content:
             application/json:
               schema:

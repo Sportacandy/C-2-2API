@@ -1,6 +1,22 @@
-    facade:
+facade:
+  required:
+  - dataModelType
+  - name
+  - attribute
+  type: object
+  description: C-2-2[B] 直接アクセス・ポイント データモデル
+  properties:
+    dataModelType:
+      type: string
+      description: データモデルタイプ
+      enum:
+        - test1
+        - test2
+      example: test1
+    attribute:
       type: object
-      description: C-2-2[B] 直接アクセス・ポイント データモデル
+      required:
+        - url
       properties:
         url:
           type: string

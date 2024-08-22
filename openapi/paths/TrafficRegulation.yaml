@@ -1,6 +1,6 @@
     get:
       tags:
-      - C-2-2[B] 車両情報連携システム
+      - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
       summary: C-2-2[B] 交通規制情報データモデル取得
       description: 交通規制情報データモデルのデータを取得します。
       parameters:
@@ -40,7 +40,7 @@
           maxLength: 4096
       responses:
         200:
-          description: OK【mapbox-vector-tileは直接アクセス・ポイント経由でのみ利用可能】        
+          description: OK
           content:
             application/json:
               schema:

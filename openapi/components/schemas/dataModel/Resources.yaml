@@ -1,56 +1,70 @@
 resources:
-  description: C-2-2[B] 共有資源状態データモデル
+  required:
+  - dataModelType
+  - name
+  - attribute
   type: object
+  description: C-2-2[B] 共有資源状態データモデル
   properties:
-    category:
+    dataModelType:
       type: string
-      description: 共有資源カテゴリ名
+      description: データモデルタイプ
       enum:
-        - evacuation
-        - mobilityhub
-      example: evacuation
-    statuses:
-      type: array
-      description: 共有資源状態配列
-      minItems: 0
-      maxItems: 2147483647
-      items:
-        type: object
-        description: 共有資源状態
-        properties:
-          key:
-            type: string
-            description: 共有資源名
-            minLength: 1
-            maxLength: 20
-            example: Feature
-          value:
-            type: string
-            description: 共有資源値。任意文字列を指定可能だが、整数として解釈できる文字列の場合は、lowerBound/upperBoundでフィルタリング可能。
-            minLength: 0
-            maxLength: 4096
-            example: 0
-          coordinates:
-            $ref: "../dataModel/Coordinates.yaml#/coordinates"
-          validFrom:
-            type: string
-            description: 有効期間開始日時（包含）。有効期間開始日時の指定が無い場合（空文字列）、有効期間開始日時はPOSTされた日時が設定される。
-            format: date-time
-            example: 2024-01-22T11:22:33Z
-          validUntil:
-            type: string
-            description: 有効期間終了日時（排他）。有効期間終了日時の指定が無い場合（空文字列）、データはDELETEされるまで永続的に存在する。空港期限切れデータは自動消去される。
-            format: date-time
-            example: 2024-01-23T11:22:33Z
-      example:
-        - key: class40t
-          value: 0
-          coordinates: [ 139.681994465, 35.506768140, 1.274998954 ]
-          validFrom: 2024-01-22T11:22:33Z
-          validUntil: 2024-01-23T11:22:33Z
-        - key: class2t
-          value: 1
-          coordinates: [ 139.681994460, 35.506768141, 1.274998944 ]
-          validFrom: 2024-02-22T11:22:33Z
-          validUntil: 2024-02-23T11:22:33Z
+        - test1
+        - test2
+      example: test1
+    attribute:
+      type: object
+      properties:
+        category:
+          type: string
+          description: 共有資源カテゴリ名
+          enum:
+            - evacuation
+            - mobilityhub
+          example: evacuation
+        statuses:
+          type: array
+          description: 共有資源状態配列
+          minItems: 0
+          maxItems: 2147483647
+          items:
+            type: object
+            description: 共有資源状態
+            properties:
+              key:
+                type: string
+                description: 共有資源名
+                minLength: 1
+                maxLength: 20
+                example: Feature
+              value:
+                type: string
+                description: 共有資源値。任意文字列を指定可能だが、整数として解釈できる文字列の場合は、lowerBound/upperBoundでフィルタリング可能。
+                minLength: 0
+                maxLength: 4096
+                example: 0
+              coordinates:
+                $ref: "../dataModel/Coordinates.yaml#/coordinates"
+              validFrom:
+                type: string
+                description: 有効期間開始日時（包含）。有効期間開始日時の指定が無い場合（空文字列）、有効期間開始日時はPOSTされた日時が設定される。
+                format: date-time
+                example: 2024-01-22T11:22:33Z
+              validUntil:
+                type: string
+                description: 有効期間終了日時（排他）。有効期間終了日時の指定が無い場合（空文字列）、データはDELETEされるまで永続的に存在する。空港期限切れデータは自動消去される。
+                format: date-time
+                example: 2024-01-23T11:22:33Z
+          example:
+            - key: class40t
+              value: 0
+              coordinates: [ 139.681994465, 35.506768140, 1.274998954 ]
+              validFrom: 2024-01-22T11:22:33Z
+              validUntil: 2024-01-23T11:22:33Z
+            - key: class2t
+              value: 1
+              coordinates: [ 139.681994460, 35.506768141, 1.274998944 ]
+              validFrom: 2024-02-22T11:22:33Z
+              validUntil: 2024-02-23T11:22:33Z
 
