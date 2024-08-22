@@ -101,8 +101,6 @@ components:
       $ref: "./components/schemas/dataModel/Period.yaml#/period"
     dataModel.Vehicle:
       $ref: "./components/schemas/dataModel/Vehicle.yaml#/vehicle"
-    dataModel.TaskStatus:
-      $ref: "./components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
   securitySchemes:
     ApiKeyAuth:
       type: apiKey

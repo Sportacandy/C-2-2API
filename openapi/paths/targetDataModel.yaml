@@ -165,12 +165,6 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
-        202:
-          description: Accepted / Job Started / Job Completed
-          content:
-            application/json:
-              schema:
-                $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
         206:
           description: Partial Content
           content:

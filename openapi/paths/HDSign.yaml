@@ -40,7 +40,7 @@
           maxLength: 4096
       responses:
         200:
-          description: OK
+          description: OK【mapbox-vector-tileは直接アクセス・ポイント経由でのみ利用可能】        
           content:
             application/json:
               schema:

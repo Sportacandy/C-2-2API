@@ -1,5 +1,5 @@
 taskstatus:
-  description: C-2-2[B] タスク状態データモデル
+  description: C-2-2[B] タスク状態データモデル(FY24不使用)
   type: object
   properties:
     type:

@@ -38,18 +38,9 @@
           type: string
           minLength: 0
           maxLength: 4096
-      - name: requestId
-        in: query
-        description: 気象リスク・シミュレーションID。指定されたIDのシミュレーション実行状態を取得する。
-        schema:
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 123
       responses:
         200:
-          description: OK
+          description: OK【mapbox-vector-tileは直接アクセス・ポイント経由でのみ利用可能】
           content:
             application/json:
               schema:
@@ -60,12 +51,6 @@
                 format: binary
                 minLength: 1
                 maxLength: 2147483647
-        202:
-          description: Accepted / Job Started / Job Completed
-          content:
-            application/json:
-              schema:
-                $ref: "../components/schemas/dataModel/TaskStatus.yaml#/taskstatus"
         400:
           description: リクエスト入力形式不備
         401:
