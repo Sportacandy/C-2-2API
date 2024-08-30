@@ -1,8 +1,8 @@
     get:
       tags:
       - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
-      summary: C-2-2[B] 交通渋滞情報データモデル取得
-      description: 交通渋滞情報データモデルのデータを取得します。
+      summary: C-2-2[B] 交通渋滞・規制情報データモデル取得
+      description: 交通渋滞・規制情報データモデルのデータを取得します。
       parameters:
       - name: bbox
         in: query

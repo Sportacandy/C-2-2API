@@ -6,6 +6,6 @@ roadlinkids:
   items:
     $ref: "../dataModel/RoadLinkId.yaml#/roadlinkid"
   example:
-    - 2301219
-    - 2301220
-    - 2301222
+    - "3624311001336243170057"
+    - "3624311001336243170219"
+    - "3624311001336243170043"

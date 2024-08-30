@@ -21,8 +21,8 @@ paths:
     $ref: "./paths/HDSign.yaml"
   /traffic:
     $ref: "./paths/Traffic.yaml"
-  /trafficregulation:
-    $ref: "./paths/TrafficRegulation.yaml"
+  /triptime:
+    $ref: "./paths/TripTime.yaml"
   /weatherrisk:
     $ref: "./paths/WeatherRisk.yaml"
   /pointcloud:
@@ -87,8 +87,8 @@ components:
       $ref: "./components/schemas/dataModel/HDSign.yaml#/hdsign"
     dataModel.Traffic:
       $ref: "./components/schemas/dataModel/Traffic.yaml#/traffic"
-    dataModel.TrafficRegulation:
-      $ref: "./components/schemas/dataModel/TrafficRegulation.yaml#/trafficregulation"
+    dataModel.TripTime:
+      $ref: "./components/schemas/dataModel/TripTime.yaml#/triptime"
     dataModel.WeatherRisk:
       $ref: "./components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
     dataModel.PointCloud:

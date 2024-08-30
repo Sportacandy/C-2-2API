@@ -1,8 +1,8 @@
     get:
       tags:
       - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
-      summary: C-2-2[B] 交通規制情報データモデル取得
-      description: 交通規制情報データモデルのデータを取得します。
+      summary: C-2-2[B] 旅行時間情報データモデル取得
+      description: 旅行時間情報データモデルのデータを取得します。
       parameters:
       - name: bbox
         in: query
@@ -44,7 +44,7 @@
           content:
             application/json:
               schema:
-                $ref: "../components/schemas/dataModel/TrafficRegulation.yaml#/trafficregulation"
+                $ref: "../components/schemas/dataModel/TripTime.yaml#/triptime"
             application/vnd.mapbox-vector-tile:
               schema:
                 type: string

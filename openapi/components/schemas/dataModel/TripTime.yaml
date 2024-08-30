@@ -1,5 +1,5 @@
-traffic:
-  description: C-2-2[B] 交通渋滞・規制情報データモデル
+triptime:
+  description: C-2-2[B] 旅行時間情報データモデル
   type: object
   required:
     - type
@@ -73,7 +73,7 @@ traffic:
                 format: int32
                 minimum: -2147483648
                 maximum: 2147483647
-                example: 3253746
+                example: 0
               direction:
                 description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
                 type: number
@@ -95,41 +95,31 @@ traffic:
                 minimum: -2147483648
                 maximum: 2147483647
                 example: 162944
-              downstream:
-                description: 下流位置情報。（電文フォーマット【P15-2】）
-                $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              upstream:
-                description: 上流位置情報。（電文フォーマット【P15-3】）
-                $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              distance:
-                description: 事象下流までの距離(m)。（電文フォーマット【P15-9】）
+              # origin:
+              #   description: 起点位置情報。（電文フォーマット【P67-24】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # endpoint:
+              #   description: 終点位置情報。（電文フォーマット【P67-26】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # waypointPosition1:
+              #   description: 地点名1の位置。（電文フォーマット【P67-27】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # waypointPosition2:
+              #   description: 地点名2の位置。（電文フォーマット【P67-28】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # waypointPosition3:
+              #   description: 地点名3の位置。（電文フォーマット【P67-29】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # waypointPosition4:
+              #   description: 地点名4の位置。（電文フォーマット【P67-30】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              # waypointPosition5:
+              #   description: 地点名5の位置。（電文フォーマット【P67-31】）
+              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
+              time:
+                description: 所要時間(秒)。（電文フォーマットP67-16】を距離比例配分した値。※【P6】利用上の注意に留意）
                 type: number
                 format: int32
                 minimum: 0
                 maximum: 2147483647
-                example: 1200
-              # length:
-              #   description: 本事象がリンク内で発生している距離(m)。ただし、事象が点の場合（事故等）は1mが設定される。（電文フォーマット【P15-10】）
-              #   type: number
-              #   format: int32
-              #   minimum: 0
-              #   maximum: 2147483647
-              #   example: 1
-              cause:
-                description: 事象の原因。提供名称か詳細名称のいずれか。（電文フォーマット【P15-5】）
-                type: string
-                minLength: 0
-                maxLength: 20
-                example: 災害
-              regulation:
-                description: 規制内容。提供名称か詳細名称のいずれか。（電文フォーマット【P15-6】）
-                type: string
-                minLength: 0
-                maxLength: 20
-                example: 片側交互通行
-              severity:
-                description: 渋滞度。渋滞＝1,混雑＝2,対象外=0。（電文フォーマット【P15-7】）
-                type: number
-                minimum: 0
-                maximum: 2
-                example: 0
+                example: 3600
