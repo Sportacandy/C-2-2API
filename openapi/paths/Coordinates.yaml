@@ -23,7 +23,17 @@
       - name: roadlinkid
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/RoadLinkId.yaml#/roadlinkid"
+          $ref: "../components/schemas/dataModel/roadlinkid.yaml#/roadlinkid"
+      - name: linkType
+        in: query
+        description: 道路リンク種別（省略時はintrinsic(システムSD道路リンク))
+        schema:
+          type: string
+          enum:
+            - drm
+            - vics
+            - intrinsic
+          example: drm
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。

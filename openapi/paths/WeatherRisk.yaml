@@ -20,10 +20,20 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: roadlink
+      - name: roadlinkid
         in: query
         schema:
-          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
+          $ref: "../components/schemas/dataModel/roadlinkid.yaml#/roadlinkid"
+      - name: linkType
+        in: query
+        description: 道路リンク種別（省略時はintrinsic(システムSD道路リンク))
+        schema:
+          type: string
+          enum:
+            - drm
+            - vics
+            - intrinsic
+          example: drm
       - name: date
         in: query
         description: タイムスタンプ。指定された日時でシミュレーションを実行する。

@@ -57,6 +57,13 @@ weatherrisk:
                 minimum: -2147483648
                 maimum: 2147483647
                 example: 1
+              laneNumber:
+                description: HDレーン番号
+                type: number
+                format: int32
+                minimum: -2147483648
+                maimum: 2147483647
+                example: 1
               windSpeeds:
                 description: 風速(m/s)配列
                 type: array
