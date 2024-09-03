@@ -39,6 +39,11 @@ traffic:
           properties:
             type: object
             properties:
+              timestamp:
+                type: string
+                description: 情報取得日時。
+                format: date-time
+                example: 2024-01-22T11:22:33Z
               roadSegmentId:
                 description: HDロードセグメントID
                 type: number
