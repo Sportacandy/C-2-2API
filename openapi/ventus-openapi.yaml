@@ -91,18 +91,35 @@ components:
     ForecastResponse:
       type: object
       properties:
+        # water_film_thickness_MM:
+        #   type: array
+        #   minItems: 1
+        #   items:
+        #     type: number
+        #     format: float
+        #     minimum: 0
+        #   example:
+        #     - 1.0
+        #     - 2.0
+        #     - 3.0
+        #     - 2.0
         water_film_thickness_MM:
           type: array
+          description: array of the road-segment's water-film-thicknesses array.
           minItems: 1
           items:
-            type: number
-            format: float
-            minimum: 0
+            type: array
+            description: array of water-film-thicknesses for respective lanes in a road-segment.
+            minItems: 1
+            items:
+              type: number
+              format: float
+              minimum: 0
           example:
-            - 1.0
-            - 2.0
-            - 3.0
-            - 2.0
+            - [ 1.1, 1.1, 1.0 ]         # For 1st road segment, lane1, lane2, lane3
+            - [ 2.0, 1.9, 1.9, 2.1 ]    # For 2nd road segment, lane1, lane2, lane3, lane4
+            - [ 3.0, 3.2, 3.3 ]         # For 3rd road segment, lane1, lane2, lane3
+            - [ 2.2, 2.1 ]              # For 4th road segment, lane1, lane2
         wind_direction_DEG:
           type: array
           minItems: 1
