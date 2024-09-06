@@ -90,16 +90,34 @@ weatherrisk:
                   example:
                     - 35.8
                     - 47.2
+              # waterfilms:
+              #   description: 水膜厚(mm)配列
+              #   type: array
+              #   minItems: 0
+              #   maxItems: 2147483647
+              #   items:
+              #     type: number
+              #     format: double
+              #     minimum: 0
+              #     maximum: 2147483647
+              #     example:
+              #       - 0.31
+              #       - 0.63
               waterfilms:
                 description: 水膜厚(mm)配列
                 type: array
                 minItems: 0
                 maxItems: 2147483647
                 items:
-                  type: number
-                  format: double
-                  minimum: 0
-                  maximum: 2147483647
-                  example:
-                    - 0.31
-                    - 0.63
+                  type: array
+                  description: array of water-film-thicknesses for respective lanes in a road-segment.
+                  minItems: 1
+                  items:
+                    type: number
+                    format: double
+                    minimum: 0
+                example:
+                  - [ 1.1, 1.1, 1.0 ]         # For 1st road segment, lane1, lane2, lane3
+                  - [ 2.0, 1.9, 1.9, 2.1 ]    # For 2nd road segment, lane1, lane2, lane3, lane4
+                  - [ 3.0, 3.2, 3.3 ]         # For 3rd road segment, lane1, lane2, lane3
+                  - [ 2.2, 2.1 ]              # For 4th road segment, lane1, lane2
