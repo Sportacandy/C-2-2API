@@ -33,91 +33,118 @@ weatherrisk:
                 description: ジオメトリ形式
                 minLength: 1
                 maxLength: 20
-                example: Point
+                example: LineString
               coordinates:
                 $ref: "../dataModel/Coordinates.yaml#/coordinates"
           properties:
-            type: object
-            properties:
-              hdRoadSegmentIds:
-                description: HDロードセグメントID列。該当値が無い場合は-1。
-                type: array
-                minItems: 0
-                maxItems: 2147483647
-                items:
-                  type: number
-                  format: int32
-                  minimum: -2147483648
-                  maximum: 2147483647
-                  example: 18
-              ordinalId:
-                description: HD区画線番号。該当値が無い場合は-1。
-                type: number
-                format: int32
-                minimum: -2147483648
-                maimum: 2147483647
-                example: 1
-              laneNumber:
-                description: HDレーン番号
-                type: number
-                format: int32
-                minimum: -2147483648
-                maimum: 2147483647
-                example: 1
-              windSpeeds:
-                description: 風速(m/s)配列
-                type: array
-                minItems: 0
-                maxItems: 2147483647
-                items:
-                  type: number
-                  format: double
-                  minimum: 0
-                  maximum: 2147483647
-                  example:
-                    - 0.5
-                    - 1.2
-              windDirections:
-                description: 風向配列。北=0度,東=90度,南=180度,西=270度。
-                type: array
-                minItems: 0
-                maxItems: 2147483647
-                items:
-                  type: number
-                  format: double
-                  minimum: 0
-                  maximum: 360
-                  example:
-                    - 35.8
-                    - 47.2
-              # waterfilms:
-              #   description: 水膜厚(mm)配列
-              #   type: array
-              #   minItems: 0
-              #   maxItems: 2147483647
-              #   items:
-              #     type: number
-              #     format: double
-              #     minimum: 0
-              #     maximum: 2147483647
-              #     example:
-              #       - 0.31
-              #       - 0.63
-              waterfilms:
-                description: 水膜厚(mm)配列
-                type: array
-                minItems: 0
-                maxItems: 2147483647
-                items:
-                  type: array
-                  description: array of water-film-thicknesses for respective lanes in a road-segment.
-                  minItems: 1
-                  items:
-                    type: number
-                    format: double
-                    minimum: 0
-                example:
-                  - [ 1.1, 1.1, 1.0 ]         # For 1st road segment, lane1, lane2, lane3
-                  - [ 2.0, 1.9, 1.9, 2.1 ]    # For 2nd road segment, lane1, lane2, lane3, lane4
-                  - [ 3.0, 3.2, 3.3 ]         # For 3rd road segment, lane1, lane2, lane3
-                  - [ 2.2, 2.1 ]              # For 4th road segment, lane1, lane2
+            oneOf:
+              - $ref: "#/components/properties/wftprops"
+              - $ref: "#/components/properties/windprops"
+components:
+  properties:
+    wftprops:
+      type: object
+      properties:
+        roadSegmentId:
+          description: HDロードセグメントID
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 18
+        laneNumber:
+          description: HDレーン番号
+          type: number
+          format: int32
+          minimum: -2147483648
+          maimum: 2147483647
+          example: 1
+        minSeq:
+          description: HDシーケンス番号最小値
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 0
+        maxSeq:
+          description: HDシーケンス番号最大値
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 5
+        linkId:
+          description: SD道路リンクID。SDマップと関連がない場合は-1。
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 3253746
+        direction:
+          description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
+          type: number
+          format: int32
+          minimum: -1
+          maximum: 2
+          example: 1
+        waterfilms:
+          description: 水膜厚(mm)
+          type: array
+          minItems: 1
+          items:
+            type: number
+            format: double
+            minimum: 0
+          example: 1.2
+    windprops:
+      type: object
+      properties:
+        roadSegmentId:
+          description: HDロードセグメントID
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 18
+        minSeq:
+          description: HDシーケンス番号最小値
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 0
+        maxSeq:
+          description: HDシーケンス番号最大値
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 5
+        linkId:
+          description: SD道路リンクID。SDマップと関連がない場合は-1。
+          type: number
+          format: int32
+          minimum: -2147483648
+          maximum: 2147483647
+          example: 3253746
+        direction:
+          description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
+          type: number
+          format: int32
+          minimum: -1
+          maximum: 2
+          example: 1
+        windSpeed:
+          description: 風速(m/s)
+          type: number
+          format: double
+          minimum: 0
+          maximum: 2147483647
+          example: 1.2
+        windDirection:
+          description: 風向。北=0度,東=90度,南=180度,西=270度。
+          type: number
+          format: double
+          minimum: 0
+          maximum: 360
+          example: 35.8
