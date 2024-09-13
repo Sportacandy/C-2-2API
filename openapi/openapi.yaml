@@ -23,6 +23,12 @@ paths:
     $ref: "./paths/Traffic.yaml"
   /triptime:
     $ref: "./paths/TripTime.yaml"
+  /constructionevent:
+    $ref: "./paths/ConstructionEvent.yaml"
+  /winterclosure:
+    $ref: "./paths/WinterClosure.yaml"
+  /entryexit:
+    $ref: "./paths/EntryExit.yaml"
   /weatherrisk:
     $ref: "./paths/WeatherRisk.yaml"
   /pointcloud:
@@ -89,6 +95,12 @@ components:
       $ref: "./components/schemas/dataModel/Traffic.yaml#/traffic"
     dataModel.TripTime:
       $ref: "./components/schemas/dataModel/TripTime.yaml#/triptime"
+    dataModel.ConstructionEvent:
+      $ref: "./components/schemas/dataModel/ConstructionEvent.yaml#/constructionevent"
+    dataModel.WinterClosure:
+      $ref: "./components/schemas/dataModel/WinterClosure.yaml#/winterclosure"
+    dataModel.EntryExit:
+      $ref: "./components/schemas/dataModel/EntryExit.yaml#/entryexit"
     dataModel.WeatherRisk:
       $ref: "./components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
     dataModel.PointCloud:

@@ -1,8 +1,8 @@
     get:
       tags:
       - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
-      summary: C-2-2[B] 旅行時間情報データモデル取得
-      description: 旅行時間情報データモデルのデータを取得します。
+      summary: C-2-2[B] 冬季閉鎖情報データモデル取得
+      description: 冬季閉鎖情報データモデルのデータを取得します。
       parameters:
       - name: bbox
         in: query
@@ -20,6 +20,13 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: date
+        in: query
+        description: タイムスタンプ。タイムスタンプが指定された場合は、閉鎖期間に指定日時が含まれるデータのみを取得する。
+        schema:
+          type: string
+          format: date-time
+          example: 2024-01-23T11:22:33Z
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
@@ -33,7 +40,7 @@
           content:
             application/json:
               schema:
-                $ref: "../components/schemas/dataModel/TripTime.yaml#/triptime"
+                $ref: "../components/schemas/dataModel/WinterClosure.yaml#/winterclosure"
             application/vnd.mapbox-vector-tile:
               schema:
                 type: string

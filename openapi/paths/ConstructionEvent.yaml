@@ -1,8 +1,8 @@
     get:
       tags:
       - C-2-2[B] 車両情報連携システム（データ流通システム取扱対象外）
-      summary: C-2-2[B] 旅行時間情報データモデル取得
-      description: 旅行時間情報データモデルのデータを取得します。
+      summary: C-2-2[B] 工事行事予定情報データモデル取得
+      description: 工事行事予定情報データモデルのデータを取得します。
       parameters:
       - name: bbox
         in: query
@@ -20,6 +20,27 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
+      - name: roadlinkid
+        in: query
+        schema:
+          $ref: "../components/schemas/dataModel/roadlinkid.yaml#/roadlinkid"
+      - name: linkType
+        in: query
+        description: 道路リンク種別（省略時はintrinsic(システムSD道路リンク))
+        schema:
+          type: string
+          enum:
+            - drm
+            - vics
+            - intrinsic
+          example: drm
+      - name: date
+        in: query
+        description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
+        schema:
+          type: string
+          format: date-time
+          example: 2024-01-23T11:22:33Z
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
@@ -33,7 +54,7 @@
           content:
             application/json:
               schema:
-                $ref: "../components/schemas/dataModel/TripTime.yaml#/triptime"
+                $ref: "../components/schemas/dataModel/ConstructionEvent.yaml#/constructionevent"
             application/vnd.mapbox-vector-tile:
               schema:
                 type: string

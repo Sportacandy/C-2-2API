@@ -1,5 +1,5 @@
-traffic:
-  description: C-2-2[B] 交通渋滞・規制情報データモデル
+constructionevent:
+  description: C-2-2[B] 工事行事予定情報データモデル
   type: object
   required:
     - type
@@ -101,147 +101,97 @@ traffic:
                 maximum: 2147483647
                 example: 162944
               routeName:
-                description: 路線名称。（電文フォーマット【P21-4】）
+                description: 路線名称。（電文フォーマット【P38-4】）
                 type: string
                 minLength: 1
                 maxLength: 120
                 example: 東名高速
               directionName:
-                description: 方向名称。（電文フォーマット【P21-5】）
+                description: 方向名称。（電文フォーマット【P38-5】）
                 type: string
                 minLength: 1
                 maxLength: 12
                 example: 上り
               cause:
-                description: 事象の原因。提供名称か詳細名称のいずれか。（電文フォーマット【P21-14】）
+                description: 事象の原因。提供名称か詳細名称のいずれか。（電文フォーマット【P38-14】）
                 type: string
                 minLength: 0
                 maxLength: 20
                 example: 災害
               regulation:
-                description: 規制内容。提供名称か詳細名称のいずれか。（電文フォーマット【P21-17】）
+                description: 規制内容。提供名称か詳細名称のいずれか。（電文フォーマット【P38-17】）
                 type: string
                 minLength: 0
                 maxLength: 20
                 example: 片側交互通行
-              length:
-                description: 渋滞長(m)。本事象が渋滞情報の場合に渋滞長を設定。（電文フォーマット【P21-21】）
-                type: number
-                format: int32
-                minimum: 0
-                maximum: 2147483647
-                example: 1
+              # length:
+              #   description: 渋滞長(m)。本事象が渋滞情報の場合に渋滞長を設定。（電文フォーマット【P21-21】）
+              #   type: number
+              #   format: int32
+              #   minimum: 0
+              #   maximum: 2147483647
+              #   example: 1
               downstreamKP:
-                description: 下流位置KP情報。10mを1単位として格納。（電文フォーマット【P22-22】）
+                description: 下流位置KP情報。10mを1単位として格納。（電文フォーマット【P39-23】）
                 type: number
                 format: int32
                 minimum: 0
                 maximum: 2147483647
                 example: 100
               downstream:
-                description: 下流位置情報。（電文フォーマット【P22-23】）
+                description: 下流位置情報。（電文フォーマット【P39-24】）
                 $ref: "../dataModel/Coordinate.yaml#/coordinate"
               downstreamDistance:
-                description: （VICSリンク内で）事象下流までの距離(m)。（電文フォーマット【P22-23】）
+                description: （VICSリンク内で）事象下流までの距離(m)。（電文フォーマット【P39-24】）
                 type: number
                 format: int32
                 minimum: 0
                 maximum: 2147483647
                 example: 1200
               upstreamKP:
-                description: 上流位置KP情報。10mを1単位として格納。（（電文フォーマット【P22-24】）
+                description: 上流位置KP情報。10mを1単位として格納。（（電文フォーマット【P39-25】）
                 type: number
                 format: int32
                 minimum: 0
                 maximum: 2147483647
                 example: 100
               upstream:
-                description: 上流位置情報。（電文フォーマット【P22-25】）
+                description: 上流位置情報。（電文フォーマット【P39-26】）
                 $ref: "../dataModel/Coordinate.yaml#/coordinate"
               upstreamDistance:
-                description: （VICSリンク内で）事象上流までの距離(m)。（電文フォーマット【P22-25】）
+                description: （VICSリンク内で）事象上流までの距離(m)。（電文フォーマット【P39-26】）
                 type: number
                 format: int32
                 minimum: 0
                 maximum: 2147483647
                 example: 1100
               laneCategory:
-                description: 本線区分。（電文フォーマット【P23-39】）
+                description: 本線区分。（電文フォーマット【P40-40】）
                 type: string
                 enum:
                   - main        # 本線
                   - entry       # 入路
                   - exit        # 出路
                   - junction    # JCT
+              planedStartTimestamp:
+                type: string
+                description: 規制開始予定日時。（電文フォーマット【P40-41】）
+                format: date-time
+                example: 2024-01-22T11:22:33Z
               planedEndTimestamp:
                 type: string
-                description: 規制解除予定日時。（電文フォーマット【P23-40】）
+                description: 規制解除予定日時。（電文フォーマット【P40-46】）
                 format: date-time
                 example: 2024-01-22T11:22:33Z
-              causeVehicleName1:
-                description: 原因車両名1。（電文フォーマット【P23-46】）
+              endTimestamp:
                 type: string
-                minLength: 0
-                maxLength: 16
-              causeVehicleNumber1:
-                description: 原因車両数1。（電文フォーマット【P23-47】）
-                type: number
-                format: int32
-                minimum: 0
-                maximum: 65536
-                example: 0
-              causeVehicleName2:
-                description: 原因車両名2。（電文フォーマット【P23-50】）
-                type: string
-                minLength: 0
-                maxLength: 16
-              causeVehicleNumber2:
-                description: 原因車両数2。（電文フォーマット【P23-51】）
-                type: number
-                format: int32
-                minimum: 0
-                maximum: 65536
-                example: 0
-              causeVehicleName3:
-                description: 原因車両名3。（電文フォーマット【P23-54】）
-                type: string
-                minLength: 0
-                maxLength: 16
-              causeVehicleNumber3:
-                description: 原因車両数3。（電文フォーマット【P23-55】）
-                type: number
-                format: int32
-                minimum: 0
-                maximum: 65536
-                example: 0
-              handlingStatus:
-                description: 障害処理状況。（電文フォーマット【P23-57】）
-                type: string
-                enum:
-                  - investigating       # 調査中
-                  - rescueing           # 救助中
-                  - handling            # 処理中
-                  - towing              # レッカー移動中
-                  - manewvering         # 移動中
-                  - cleaning            # 散乱物撤去
-                  - deoiling            # 油処理
-                  - inspecting          # 検分中
-                  - deregulating        # 規制解除処理中
-                  - other               # その他
-                  - noinfo              # 情報なし
-                  - nodata              # データなし
-                example: investigating
-              prediction:
-                description: 予測。（電文フォーマット【P23-58】）
-                type: string
-                enum:
-                  - nochange            # 変化無し
-                  - extend              # 伸びる
-                  - shrink              # 縮小する
-                  - noinfo              # 情報なし／不明
-                  - nodata              # データなし
-              planedResumeTimestamp:
-                type: string
-                description: 復旧予定日時。（電文フォーマット【P23-60】）
+                description: 規制解除日時。（電文フォーマット【P40-51】）
                 format: date-time
                 example: 2024-01-22T11:22:33Z
+              isCurrentStatus:
+                description: 現況フラグ。0=現況以外、1=現況。（電文フォーマット【P40-58】を反転）
+                type: number
+                format: int32
+                minimum: 0
+                maximum: 1
+                example: 0
