@@ -7,52 +7,12 @@ servers:
 paths:
   /facade:
     $ref: "./paths/Facade.yaml"
-  /hdlanecenter:
-    $ref: "./paths/HDLaneCenter.yaml"
-  /hdlaneline:
-    $ref: "./paths/HDLaneLine.yaml"
-  /hdroadedge:
-    $ref: "./paths/HDRoadEdge.yaml"
-  /hdintersection:
-    $ref: "./paths/HDIntersection.yaml"
-  /hdpavementmarking:
-    $ref: "./paths/HDPavementMarking.yaml"
-  /hdsign:
-    $ref: "./paths/HDSign.yaml"
-  /traffic:
-    $ref: "./paths/Traffic.yaml"
-  /triptime:
-    $ref: "./paths/TripTime.yaml"
-  /constructionevent:
-    $ref: "./paths/ConstructionEvent.yaml"
-  /winterclosure:
-    $ref: "./paths/WinterClosure.yaml"
-  /entryexit:
-    $ref: "./paths/EntryExit.yaml"
-  /weatherrisk:
-    $ref: "./paths/WeatherRisk.yaml"
-  /pointcloud:
-    $ref: "./paths/PointCloud.yaml"
   /resources:
     $ref: "./paths/Resources.yaml"
   /fileattributes:
     $ref: "./paths/FileAttributes.yaml"
-  /roadlinkids:
-    $ref: "./paths/RoadLinkIds.yaml"
-  /voxels:
-    $ref: "./paths/Voxels.yaml"
-  /coordinates:
-    $ref: "./paths/Coordinates.yaml"
-  /bbox:
-    $ref: "./paths/BBox.yaml"
-  # /{targetDataModel}:
-  #   $ref: "./paths/targetDataModel.yaml"
-  /map/{dataType}/{z}/{x}/{y}.pbf:
-    $ref: "./paths/map.yaml"
-  /login:
-    $ref: "./paths/login.yaml"
   /auth:
-    $ref: "./paths/auth.yaml"
+    $ref: "./paths/login.yaml"
 components:
   schemas:
     authentication.Information:
@@ -61,58 +21,20 @@ components:
       $ref: "./components/schemas/authentication/token.yaml#/token"
     dataModel.BBox:
       $ref: "./components/schemas/dataModel/bbox.yaml#/bbox"
-    dataModel.Voxels:
-      $ref: "./components/schemas/dataModel/Voxels.yaml#/voxels"
+    dataModel.Voxel:
+      $ref: "./components/schemas/dataModel/Voxel.yaml#/voxel"
     dataModel.Mesh:
       $ref: "./components/schemas/dataModel/mesh.yaml#/mesh"
     dataModel.City:
       $ref: "./components/schemas/dataModel/city.yaml#/city"
-    dataModel.RoadNode:
-      $ref: "./components/schemas/dataModel/RoadNode.yaml#/roadnode"
-    dataModel.RoadLinkIds:
-      $ref: "./components/schemas/dataModel/RoadLinkIds.yaml#/roadlinkids"
-    dataModel.RoadLink:
-      $ref: "./components/schemas/dataModel/RoadLink.yaml#/roadlink"
-    dataModel.Reg:
-      $ref: "./components/schemas/dataModel/reg.yaml#/reg"
     dataModel.Coordinates:
       $ref: "./components/schemas/dataModel/Coordinates.yaml#/coordinates"
     dataModel.Facade:
       $ref: "./components/schemas/dataModel/Facade.yaml#/facade"
-    dataModel.HDLaneCenter:
-      $ref: "./components/schemas/dataModel/HDLaneCenter.yaml#/hdlanecenter"
-    dataModel.HDLaneLine:
-      $ref: "./components/schemas/dataModel/HDLaneLine.yaml#/hdlaneline"
-    dataModel.HDRoadEdge:
-      $ref: "./components/schemas/dataModel/HDRoadEdge.yaml#/hdroadedge"
-    dataModel.HDIntersection:
-      $ref: "./components/schemas/dataModel/HDIntersection.yaml#/hdintersection"
-    dataModel.HDPavementMarking:
-      $ref: "./components/schemas/dataModel/HDPavementMarking.yaml#/hdpavementmarking"
-    dataModel.HDSign:
-      $ref: "./components/schemas/dataModel/HDSign.yaml#/hdsign"
-    dataModel.Traffic:
-      $ref: "./components/schemas/dataModel/Traffic.yaml#/traffic"
-    dataModel.TripTime:
-      $ref: "./components/schemas/dataModel/TripTime.yaml#/triptime"
-    dataModel.ConstructionEvent:
-      $ref: "./components/schemas/dataModel/ConstructionEvent.yaml#/constructionevent"
-    dataModel.WinterClosure:
-      $ref: "./components/schemas/dataModel/WinterClosure.yaml#/winterclosure"
-    dataModel.EntryExit:
-      $ref: "./components/schemas/dataModel/EntryExit.yaml#/entryexit"
-    dataModel.WeatherRisk:
-      $ref: "./components/schemas/dataModel/WeatherRisk.yaml#/weatherrisk"
-    dataModel.PointCloud:
-      $ref: "./components/schemas/dataModel/PointCloud.yaml#/pointcloud"
     dataModel.Resources:
       $ref: "./components/schemas/dataModel/Resources.yaml#/resources"
     dataModel.FileAttributes:
       $ref: "./components/schemas/dataModel/FileAttributes.yaml#/fileattributes"
-    dataModel.Period:
-      $ref: "./components/schemas/dataModel/Period.yaml#/period"
-    dataModel.Vehicle:
-      $ref: "./components/schemas/dataModel/Vehicle.yaml#/vehicle"
   securitySchemes:
     ApiKeyAuth:
       type: apiKey

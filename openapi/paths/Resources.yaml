@@ -20,10 +20,6 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: roadlink
-        in: query
-        schema:
-          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
@@ -121,10 +117,6 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: roadlink
-        in: query
-        schema:
-          $ref: "../components/schemas/dataModel/roadlink.yaml#/roadlink"
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。
