@@ -20,20 +20,6 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: roadlinkid
-        in: query
-        schema:
-          $ref: "../components/schemas/dataModel/roadlinkid.yaml#/roadlinkid"
-      - name: linkType
-        in: query
-        description: 道路リンク種別（省略時はintrinsic(システムSD道路リンク))
-        schema:
-          type: string
-          enum:
-            - drm
-            - vics
-            - intrinsic
-          example: drm
       - name: date
         in: query
         description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。

@@ -1,6 +1,0 @@
-roadlinkid:
-  description: C-2-2[B] 道路リンクID データモデル
-  type: string
-  minLength: 1
-  maxLength: 22
-  example: "3624311001336243170057"

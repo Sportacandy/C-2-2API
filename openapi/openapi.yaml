@@ -37,16 +37,12 @@ paths:
     $ref: "./paths/Resources.yaml"
   /fileattributes:
     $ref: "./paths/FileAttributes.yaml"
-  /roadlinkids:
-    $ref: "./paths/RoadLinkIds.yaml"
   /voxels:
     $ref: "./paths/Voxels.yaml"
   /coordinates:
     $ref: "./paths/Coordinates.yaml"
   /bbox:
     $ref: "./paths/BBox.yaml"
-  # /{targetDataModel}:
-  #   $ref: "./paths/targetDataModel.yaml"
   /map/{dataType}/{z}/{x}/{y}.pbf:
     $ref: "./paths/map.yaml"
   /login:
