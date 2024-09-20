@@ -1,5 +1,5 @@
 constructionevent:
-  description: C-2-2[B] 工事行事予定情報データモデル
+  description: C-2-2[B] 工事行事予定情報データモデル。JARTIC工事行事予定情報に基づく情報。
   type: object
   required:
     - type
@@ -124,13 +124,6 @@ constructionevent:
                 minLength: 0
                 maxLength: 20
                 example: 片側交互通行
-              # length:
-              #   description: 渋滞長(m)。本事象が渋滞情報の場合に渋滞長を設定。（電文フォーマット【P21-21】）
-              #   type: number
-              #   format: int32
-              #   minimum: 0
-              #   maximum: 2147483647
-              #   example: 1
               downstreamKP:
                 description: 下流位置KP情報。10mを1単位として格納。（電文フォーマット【P39-23】）
                 type: number
@@ -188,6 +181,16 @@ constructionevent:
                 description: 規制解除日時。（電文フォーマット【P40-51】）
                 format: date-time
                 example: 2024-01-22T11:22:33Z
+              detour1:
+                description: 迂回路1。（電文フォーマット【P40-56】）
+                type: string
+                minLength: 0
+                maxLength: 24
+              detour2:
+                description: 迂回路2。（電文フォーマット【P40-57】）
+                type: string
+                minLength: 0
+                maxLength: 24
               isCurrentStatus:
                 description: 現況フラグ。0=現況以外、1=現況。（電文フォーマット【P40-58】を反転）
                 type: number

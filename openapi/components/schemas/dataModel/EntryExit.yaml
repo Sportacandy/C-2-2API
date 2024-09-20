@@ -1,5 +1,5 @@
 entryexit:
-  description: C-2-2[B] 入口出口閉鎖情報データモデル
+  description: C-2-2[B] 入口出口閉鎖情報データモデル。JARTIC入口出口閉鎖情報に基づく情報。
   type: object
   required:
     - type

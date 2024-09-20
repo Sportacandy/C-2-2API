@@ -1,5 +1,5 @@
 triptime:
-  description: C-2-2[B] 旅行時間情報データモデル
+  description: C-2-2[B] 旅行時間情報データモデル。JARTIC旅行時間情報に基づく情報。
   type: object
   required:
     - type
@@ -100,27 +100,6 @@ triptime:
                 minimum: -2147483648
                 maximum: 2147483647
                 example: 162944
-              # origin:
-              #   description: 起点位置情報。（電文フォーマット【P67-24】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # endpoint:
-              #   description: 終点位置情報。（電文フォーマット【P67-26】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # waypointPosition1:
-              #   description: 地点名1の位置。（電文フォーマット【P67-27】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # waypointPosition2:
-              #   description: 地点名2の位置。（電文フォーマット【P67-28】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # waypointPosition3:
-              #   description: 地点名3の位置。（電文フォーマット【P67-29】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # waypointPosition4:
-              #   description: 地点名4の位置。（電文フォーマット【P67-30】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
-              # waypointPosition5:
-              #   description: 地点名5の位置。（電文フォーマット【P67-31】）
-              #   $ref: "../dataModel/Coordinate.yaml#/coordinate"
               time:
                 description: 所要時間(秒)。（電文フォーマットP67-16】を距離比例配分した値。※【P6】利用上の注意に留意）
                 type: number

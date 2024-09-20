@@ -1,5 +1,5 @@
 winterclosure:
-  description: C-2-2[B] 冬季閉鎖情報データモデル
+  description: C-2-2[B] 冬季閉鎖情報データモデル。JARTIC冬季閉鎖情報に基づく情報。ただし、解除済みの冬季閉鎖情報（現況フラグが2の情報）は取り扱い対象外とする。
   type: object
   required:
     - type
@@ -145,7 +145,7 @@ winterclosure:
                 maximum: 2147483647
                 example: 1100
               laneCategory:
-                description: 本線区分。（電文フォーマット【P53-35】）
+                description: 本線区分。常にmain。（電文フォーマット【P53-35】）
                 type: string
                 enum:
                   - main        # 本線
@@ -178,7 +178,7 @@ winterclosure:
                 minLength: 0
                 maxLength: 24
               isCurrentStatus:
-                description: 現況フラグ。0=現況以外、1=現況。（電文フォーマット【P53-53】を反転）
+                description: 現況フラグ。0=現況以外、1=現況。（電文フォーマット【P53-53】を反転。解除済み(2)は取り扱い対象外）
                 type: number
                 format: int32
                 minimum: 0
