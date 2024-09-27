@@ -63,12 +63,6 @@ components:
       $ref: "./components/schemas/dataModel/mesh.yaml#/mesh"
     dataModel.City:
       $ref: "./components/schemas/dataModel/city.yaml#/city"
-    dataModel.RoadNode:
-      $ref: "./components/schemas/dataModel/RoadNode.yaml#/roadnode"
-    dataModel.RoadLinkIds:
-      $ref: "./components/schemas/dataModel/RoadLinkIds.yaml#/roadlinkids"
-    dataModel.RoadLink:
-      $ref: "./components/schemas/dataModel/RoadLink.yaml#/roadlink"
     dataModel.Reg:
       $ref: "./components/schemas/dataModel/reg.yaml#/reg"
     dataModel.Coordinates:
