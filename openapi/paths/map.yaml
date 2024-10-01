@@ -21,6 +21,10 @@
             - sd-road-node
             - road-traffic
             - road-traffic-reg
+            - construction-event
+            - entry-exit
+            - trip-time
+            - winter-closure
       - name: z
         description: ズームレベル(Z)
         required: true
