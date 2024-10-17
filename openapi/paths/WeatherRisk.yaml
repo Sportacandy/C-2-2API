@@ -20,7 +20,7 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: date
+      - name: timestamp
         in: query
         description: タイムスタンプ。指定された日時でシミュレーションを実行する。
         schema:

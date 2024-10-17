@@ -55,7 +55,7 @@
           minimum: 0
           maximum: 2147483647
           example: 3229
-      - name: date
+      - name: timestamp
         in: query
         description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
         schema:

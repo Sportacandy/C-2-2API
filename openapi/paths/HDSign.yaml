@@ -20,7 +20,7 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: date
+      - name: timestamp
         in: query
         description: タイムスタンプ。（もしあれば）指定タイムスタンプより古いデータの中から最も新しいデータを取得する。省略時は最新版。
         schema:

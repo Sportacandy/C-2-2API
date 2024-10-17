@@ -20,13 +20,27 @@
         in: query
         schema:
           $ref: "../components/schemas/dataModel/city.yaml#/city"
-      - name: date
+      - name: timestamp
         in: query
-        description: タイムスタンプ。タイムスタンプが指定された場合は、閉鎖期間に指定日時が含まれるデータのみを取得する。
+        description: タイムスタンプ。timestamp指定時は、startTimestamp, endTimestampの指定不可。指定日時が規制対象期間（規制開始日時～規制解除予定日時）に含まれるデータを取得する。検索対象期間・timestampともに省略された時は日時によるフィルタリングを行わない。
         schema:
           type: string
           format: date-time
           example: 2024-01-23T11:22:33Z
+      - name: startTimestamp
+        in: query
+        description: 検索対象期間（開始日時（包含））。startTimestamp指定時はendTimestampの指定が必須。timestampの指定不可。）。検索対象期間と規制対象期間（規制開始日時～規制解除予定日時）の積が空でないデータを取得する。検索対象期間・timestampともに省略された時は日時によるフィルタリングを行わない。
+        schema:
+          type: string
+          format: date-time
+          example: 2024-01-23T15:00:00Z
+      - name: endTimestamp
+        in: query
+        description: 検索対象期間（終了日時（排他））。endTimestamp指定時はstartTimestampの指定が必須。timestampの指定不可。）。検索対象期間と規制対象期間（規制開始日時～規制解除予定日時）の積が空でないデータを取得する。検索対象期間・timestampともに省略された時は日時によるフィルタリングを行わない。
+        schema:
+          type: string
+          format: date-time
+          example: 2024-01-23T18:00:00Z
       - name: roadName
         in: query
         description: 道路名称。道路名称絞り込み対象の場合に指定可能。

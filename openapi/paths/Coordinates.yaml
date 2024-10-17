@@ -29,7 +29,7 @@
           maxLength: 4096
       - name: geodetic
         in: query
-        description: 測地系。省略時はJGD2011が仮定される。
+        description: 測地系。省略時はJGD2011(EPSG:6697)が仮定される。
         schema:
           type: string
           minLength: 0
