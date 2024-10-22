@@ -43,7 +43,7 @@ resources:
                 description: 共有資源値。任意文字列を指定可能だが、整数として解釈できる文字列の場合は、lowerBound/upperBoundでフィルタリング可能。
                 minLength: 0
                 maxLength: 4096
-                example: 0
+                example: "ewogICAgIm1vYmlsaXR5SHViSWQiOiAiRTFBLTAwMS1VIiwKICAgICJmcmVpZ2h0SWQiOiAiMTIzLTQ1Ni03ODkiLAogICAgInRydWNrSWQiOiAi5ZOB5bedIDEwMiDjgYIgMTAtMDkiLAogICAgInNpemVDbGFzcyI6ICJsYXJnZTIwNTBDbGFzcyIKfQo="
               coordinates:
                 $ref: "../dataModel/Coordinates.yaml#/coordinates"
               validFrom:

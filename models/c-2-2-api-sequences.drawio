@@ -1,11 +1,11 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="5">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.17 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.17" pages="7">
   <diagram name="C-2-1経由時のシーケンス" id="2YBvvXClWsGukQMizWep">
-    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Qv2kMFumS-zRc43ijODE-3" value=":C-2-2 [B]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="720" y="80" width="100" height="720" as="geometry" />
+          <mxGeometry x="700" y="80" width="100" height="720" as="geometry" />
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-52" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="Qv2kMFumS-zRc43ijODE-3" vertex="1">
           <mxGeometry x="45" y="465" width="10" height="105" as="geometry" />
@@ -27,25 +27,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-1" value=":App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="200" y="80" width="100" height="1010" as="geometry" />
+          <mxGeometry x="180" y="80" width="100" height="1000" as="geometry" />
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
           <mxGeometry x="45" y="60" width="10" height="80" as="geometry" />
         </mxCell>
         <mxCell id="JKQSdfEKDAcKGkrRnbKr-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
-          <mxGeometry x="45" y="910" width="10" height="90" as="geometry" />
+          <mxGeometry x="45" y="890" width="10" height="90" as="geometry" />
         </mxCell>
         <mxCell id="W6BTH40ns69EnWN3gB2Q-2" value="有効期限タイマーを設定する。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="aM9ryv3xv72pqoxQDRHE-1" target="W6BTH40ns69EnWN3gB2Q-1" edge="1">
           <mxGeometry x="0.1757" y="5" relative="1" as="geometry">
-            <mxPoint x="55" y="950" as="sourcePoint" />
+            <mxPoint x="55" y="930" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="85" y="980" />
+              <mxPoint x="85" y="960" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="W6BTH40ns69EnWN3gB2Q-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
-          <mxGeometry x="50" y="970" width="10" height="25" as="geometry" />
+          <mxGeometry x="50" y="950" width="10" height="25" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-71" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-1" vertex="1">
           <mxGeometry x="45" y="220" width="10" height="130" as="geometry" />
@@ -58,25 +58,25 @@
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-7" value="POST /auth/login" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="255" y="150" as="sourcePoint" />
+            <mxPoint x="235" y="150" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="340" y="150" />
+              <mxPoint x="320" y="150" />
             </Array>
-            <mxPoint x="425" y="150" as="targetPoint" />
+            <mxPoint x="405" y="150" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="aM9ryv3xv72pqoxQDRHE-9" value="201 created" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="425" y="210" as="sourcePoint" />
+            <mxPoint x="405" y="210" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="350" y="210" />
+              <mxPoint x="330" y="210" />
             </Array>
-            <mxPoint x="255" y="210" as="targetPoint" />
+            <mxPoint x="235" y="210" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-1" value=":C-2-2 [A]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="560" y="60" width="120" height="620" as="geometry" />
+          <mxGeometry x="540" y="60" width="120" height="620" as="geometry" />
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};dashed=1;strokeWidth=1;fillColor=#CCFF99;" parent="Qv2kMFumS-zRc43ijODE-1" vertex="1">
           <mxGeometry x="55" y="260" width="10" height="90" as="geometry" />
@@ -86,98 +86,98 @@
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-5" value="GET /Facade" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="255" y="310" as="sourcePoint" />
+            <mxPoint x="235" y="310" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="335" y="310" />
+              <mxPoint x="315" y="310" />
             </Array>
-            <mxPoint x="425" y="310" as="targetPoint" />
+            <mxPoint x="405" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-6" value="GET /Facade" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="435" y="320" as="sourcePoint" />
+            <mxPoint x="415" y="320" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="520" y="320" />
+              <mxPoint x="500" y="320" />
             </Array>
-            <mxPoint x="615" y="320" as="targetPoint" />
+            <mxPoint x="595" y="320" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-9" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615" y="410" as="sourcePoint" />
+            <mxPoint x="595" y="410" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="535" y="410" />
+              <mxPoint x="515" y="410" />
             </Array>
-            <mxPoint x="435" y="410" as="targetPoint" />
+            <mxPoint x="415" y="410" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-10" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry x="-0.1176" relative="1" as="geometry">
-            <mxPoint x="425" y="420" as="sourcePoint" />
+            <mxPoint x="405" y="420" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="340" y="420" />
+              <mxPoint x="320" y="420" />
             </Array>
-            <mxPoint x="255" y="420" as="targetPoint" />
+            <mxPoint x="235" y="420" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-19" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;デジライン標準（アプリがデータ流通システム(C-2-1)を通じて通信する場合）&lt;/font&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;font color=&quot;#ff6666&quot; style=&quot;font-size: 12px;&quot;&gt;&lt;u&gt;※ C-2-1はバイナリデータを流通させない仕様のため、これを回避する手段が必要。&lt;/u&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry width="650" height="60" as="geometry" />
+          <mxGeometry x="10" width="650" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-50" value="GET /{targetDataModel}" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="255" y="535" as="sourcePoint" />
+            <mxPoint x="235" y="535" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="335" y="535" />
+              <mxPoint x="315" y="535" />
             </Array>
-            <mxPoint x="425" y="535" as="targetPoint" />
+            <mxPoint x="405" y="535" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-51" value="GET /{targetDataModel}" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="435" y="539.5799999999999" as="sourcePoint" />
+            <mxPoint x="415" y="539.5799999999999" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="530" y="539.5799999999999" />
+              <mxPoint x="510" y="539.5799999999999" />
             </Array>
-            <mxPoint x="615.0000000000002" y="539.5799999999999" as="targetPoint" />
+            <mxPoint x="595.0000000000002" y="539.5799999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-53" value="GET /{targetDataModel}" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry x="0.0714" relative="1" as="geometry">
-            <mxPoint x="625" y="545" as="sourcePoint" />
+            <mxPoint x="605" y="545" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="715" y="545" />
+              <mxPoint x="695" y="545" />
             </Array>
-            <mxPoint x="765" y="545" as="targetPoint" />
+            <mxPoint x="745" y="545" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-54" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="765" y="650" as="sourcePoint" />
+            <mxPoint x="745" y="650" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="695" y="650" />
+              <mxPoint x="675" y="650" />
             </Array>
-            <mxPoint x="625" y="650" as="targetPoint" />
+            <mxPoint x="605" y="650" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-55" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" source="Qv2kMFumS-zRc43ijODE-49" target="Qv2kMFumS-zRc43ijODE-48" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="610" y="660" as="sourcePoint" />
+            <mxPoint x="590" y="660" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="520" y="660" />
+              <mxPoint x="500" y="660" />
             </Array>
-            <mxPoint x="460" y="660" as="targetPoint" />
+            <mxPoint x="440" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-56" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry x="0.1176" relative="1" as="geometry">
-            <mxPoint x="425" y="670" as="sourcePoint" />
+            <mxPoint x="405" y="670" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="340" y="670" />
+              <mxPoint x="320" y="670" />
             </Array>
-            <mxPoint x="255" y="670" as="targetPoint" />
+            <mxPoint x="235" y="670" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -185,53 +185,53 @@
           <mxGeometry x="20" y="520" width="190" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-64" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="680" y="80" width="40" height="20" as="geometry" />
+          <mxGeometry x="660" y="80" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="2MUVDJIt3ERt5kHvMN0i-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;C-2-2[B]の公開IPアドレス&lt;/font&gt;&lt;/b&gt;を返す。　&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.65;base=30;" parent="1" vertex="1">
-          <mxGeometry x="635" y="260" width="130" height="70" as="geometry" />
+          <mxGeometry x="615" y="260" width="130" height="70" as="geometry" />
         </mxCell>
         <mxCell id="JKQSdfEKDAcKGkrRnbKr-8" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
-          <mxGeometry x="150" y="980" width="340" height="110" as="geometry" />
+          <mxGeometry x="130" y="960" width="340" height="110" as="geometry" />
         </mxCell>
         <mxCell id="0UJ3WVWB1CKk_aN6yeqt-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;最初に直接アクセス・ポイント情報を取得する&lt;/font&gt;&lt;/b&gt;。規約外APIを利用できるようにするため。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; text-align: center;&quot;&gt;　　※API /facade&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="29" y="300" width="190" height="60" as="geometry" />
+          <mxGeometry x="20" y="300" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="l6zS16BRsBkH0_cx7ov1-1" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;VPC Peering&lt;/b&gt;&lt;/font&gt;で接続&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.18;base=12;" parent="1" vertex="1">
-          <mxGeometry x="700" y="40" width="100" height="40" as="geometry" />
+          <mxGeometry x="680" y="40" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="l6zS16BRsBkH0_cx7ov1-2" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="480" y="80" width="80" height="20" as="geometry" />
+          <mxGeometry x="460" y="80" width="80" height="20" as="geometry" />
         </mxCell>
         <mxCell id="l6zS16BRsBkH0_cx7ov1-3" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;IP制限＋認証済みの想定&lt;/font&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;（APIキー）&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.17;" parent="1" vertex="1">
-          <mxGeometry x="510" y="30" width="170" height="50" as="geometry" />
+          <mxGeometry x="490" y="30" width="170" height="50" as="geometry" />
         </mxCell>
         <mxCell id="5qgilTmHeGa8GDz7O41O-27" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;認証トークン更新　　&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
-          <mxGeometry x="30" y="980" width="110" height="50" as="geometry" />
+          <mxGeometry x="10" y="960" width="110" height="50" as="geometry" />
         </mxCell>
         <mxCell id="u5XXY-ZTiW07sj4fWdaM-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;ユーザートークン発行&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" parent="1" vertex="1">
-          <mxGeometry x="490" y="140" width="110" height="40" as="geometry" />
+          <mxGeometry x="470" y="140" width="110" height="40" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-1" value="GET /Facade" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="625" y="330" as="sourcePoint" />
+            <mxPoint x="605" y="330" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="705" y="330" />
+              <mxPoint x="685" y="330" />
             </Array>
-            <mxPoint x="765" y="330" as="targetPoint" />
+            <mxPoint x="745" y="330" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-8" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="765" y="400" as="sourcePoint" />
+            <mxPoint x="745" y="400" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="720" y="400" />
+              <mxPoint x="700" y="400" />
             </Array>
-            <mxPoint x="625" y="400" as="targetPoint" />
+            <mxPoint x="605" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value=":C-2-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="380" y="80" width="100" height="960" as="geometry" />
+        <mxCell id="aM9ryv3xv72pqoxQDRHE-5" value=":C-2-1" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};opacity=60;" parent="1" vertex="1">
+          <mxGeometry x="360" y="80" width="100" height="940" as="geometry" />
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-8" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" parent="aM9ryv3xv72pqoxQDRHE-5" source="aM9ryv3xv72pqoxQDRHE-6" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -297,7 +297,7 @@
             <mxPoint x="-71" y="-12" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="omazqho2kKG3DwgBfHY7-16" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;" parent="aM9ryv3xv72pqoxQDRHE-5" edge="1">
+        <mxCell id="omazqho2kKG3DwgBfHY7-16" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;opacity=60;" parent="aM9ryv3xv72pqoxQDRHE-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="62.5" y="515" as="sourcePoint" />
             <mxPoint x="385.0000000000002" y="515" as="targetPoint" />
@@ -309,25 +309,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="JKQSdfEKDAcKGkrRnbKr-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
-          <mxGeometry x="45" y="917.5" width="10" height="30" as="geometry" />
+          <mxGeometry x="45" y="897.5" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JKQSdfEKDAcKGkrRnbKr-4" value="POST /auth/refresh" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="aM9ryv3xv72pqoxQDRHE-5" target="JKQSdfEKDAcKGkrRnbKr-3" edge="1">
           <mxGeometry x="0.0034" relative="1" as="geometry">
-            <mxPoint x="-125" y="917.5" as="sourcePoint" />
+            <mxPoint x="-125" y="897.5" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="-50" y="917.5" />
+              <mxPoint x="-50" y="897.5" />
             </Array>
-            <mxPoint x="220" y="917.5" as="targetPoint" />
+            <mxPoint x="220" y="897.5" as="targetPoint" />
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="JKQSdfEKDAcKGkrRnbKr-6" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="aM9ryv3xv72pqoxQDRHE-5" source="JKQSdfEKDAcKGkrRnbKr-3" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="937.5" as="sourcePoint" />
+            <mxPoint x="230" y="917.5" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="-10" y="937.5" />
+              <mxPoint x="-10" y="917.5" />
             </Array>
-            <mxPoint x="-125" y="937.5" as="targetPoint" />
+            <mxPoint x="-125" y="917.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Qv2kMFumS-zRc43ijODE-16" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="aM9ryv3xv72pqoxQDRHE-5" edge="1">
@@ -387,7 +387,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="c1PD0P7a9lApf4Ewm2Fh-9" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;【C-2-1API規約外のデータを扱う場合】&lt;/span&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=210;height=15;shadow=0;align=left;" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
-          <mxGeometry x="-370" y="610" width="830" height="230" as="geometry" />
+          <mxGeometry x="-350" y="610" width="810" height="230" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-57" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="aM9ryv3xv72pqoxQDRHE-5" vertex="1">
           <mxGeometry x="45" y="730" width="10" height="20" as="geometry" />
@@ -396,113 +396,128 @@
           <mxGeometry x="-100" y="740" width="145" height="50.57" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-10" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;トークン検証(&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;C-2-1API利用&lt;/b&gt;&lt;/font&gt;)。&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.8;base=20;" parent="1" vertex="1">
-          <mxGeometry x="270" y="330" width="150" height="40" as="geometry" />
+          <mxGeometry x="250" y="330" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-12" value="&lt;b style=&quot;color: rgb(255, 0, 0); font-size: 10px;&quot;&gt;緑箱&lt;/b&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;は、RewriteURLでリクエスト／レスポンスを転送するだけで他は何もしない&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.65;base=30;" parent="1" vertex="1">
-          <mxGeometry x="480" y="250" width="130" height="70" as="geometry" />
+          <mxGeometry x="460" y="250" width="130" height="70" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-18" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;トークン検証(&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;C-2-1API利用&lt;/b&gt;&lt;/font&gt;)。&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.8;base=20;" parent="1" vertex="1">
-          <mxGeometry x="270" y="545" width="150" height="40" as="geometry" />
+          <mxGeometry x="250" y="545" width="150" height="40" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-58" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;現行C-2-1API規約外のデータを扱うAPIの場合は直接アクセス・ポイントに対してリクエストする。&lt;/span&gt;&lt;br style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;　　（バイナリデータ取得、等）&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" parent="1" vertex="1">
-          <mxGeometry x="260" y="700" width="160" height="80" as="geometry" />
+          <mxGeometry x="240" y="700" width="160" height="80" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-59" value="&lt;b style=&quot;color: rgb(255, 0, 0); font-size: 10px;&quot;&gt;緑箱&lt;/b&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;は、RewriteURLでリクエスト／レスポンスを転送するだけで&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;&lt;b style=&quot;color: rgb(255, 0, 0); font-size: 10px;&quot;&gt;他は&lt;/b&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;何もしない&lt;/b&gt;&lt;/span&gt;&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.65;base=30;" parent="1" vertex="1">
-          <mxGeometry x="480" y="465" width="130" height="70" as="geometry" />
+          <mxGeometry x="460" y="465" width="130" height="70" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-60" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;【C-2-1API規約のデータを扱う場合】&lt;/span&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=190;height=20;shadow=0;" parent="1" vertex="1">
-          <mxGeometry x="10" y="460" width="830" height="220" as="geometry" />
+          <mxGeometry x="10" y="460" width="810" height="220" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-61" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;【C-2-1API規約準拠＆疎通確認】&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;ファサード取得&lt;/span&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=30;shadow=0;align=left;" parent="1" vertex="1">
-          <mxGeometry x="10" y="240" width="830" height="205" as="geometry" />
+          <mxGeometry x="10" y="240" width="810" height="205" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-70" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;【C-2-1 ログイン】&lt;/span&gt;&lt;/div&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=170;height=15;shadow=0;align=left;" parent="1" vertex="1">
-          <mxGeometry x="10" y="130" width="830" height="100" as="geometry" />
+          <mxGeometry x="10" y="130" width="810" height="100" as="geometry" />
         </mxCell>
         <mxCell id="omazqho2kKG3DwgBfHY7-75" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;API /resources, /fileattributes 以外のAPIを利用する場合。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;　　&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="750" width="190" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="QIpAmKWjs782UPEktXwA-1" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="480" y="110" width="240" height="10" as="geometry" />
+        <mxCell id="QIpAmKWjs782UPEktXwA-1" value="" style="shape=doubleArrow;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="460" y="110" width="240" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="QIpAmKWjs782UPEktXwA-3" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;IP制限＋認証済みの想定&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;（APIキー）&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.93;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=25;position=0.69;base=20;direction=west;" vertex="1" parent="1">
-          <mxGeometry x="630" y="120" width="120" height="60" as="geometry" />
+        <mxCell id="QIpAmKWjs782UPEktXwA-3" value="&lt;div style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;IP制限＋認証済みの想定&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: initial; font-size: 10px;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;（APIキー）&lt;/b&gt;&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.93;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=25;position=0.69;base=20;direction=west;" parent="1" vertex="1">
+          <mxGeometry x="610" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="l4GBKS_YLokIbVfYR-XQ-1" value="&lt;span style=&quot;background-color: initial;&quot;&gt;※ 薄灰色枠　　　 で囲った部分は、FY24は不要。&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;将来、認可機能等が必要になった際に実装する。&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="500" y="970" width="290" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l4GBKS_YLokIbVfYR-XQ-7" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="l4GBKS_YLokIbVfYR-XQ-1">
+          <mxGeometry x="70" y="10" width="30" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="l4GBKS_YLokIbVfYR-XQ-2" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="410" y="555" width="340" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="l4GBKS_YLokIbVfYR-XQ-5" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="410" y="790" width="340" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="l4GBKS_YLokIbVfYR-XQ-6" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="410" y="340" width="340" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram name="C-2-2[B]直結時のシーケンス" id="W09oZ4LH9ulDeSqZCkFV">
-    <mxGraphModel dx="1418" dy="1938" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="3176" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="ruvBuBlSj2xhvu7RqnBg-0" />
         <mxCell id="ruvBuBlSj2xhvu7RqnBg-1" parent="ruvBuBlSj2xhvu7RqnBg-0" />
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="245" y="840" width="10" height="120" as="geometry" />
+          <mxGeometry x="249" y="-1490" width="10" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="615" y="850" width="10" height="30" as="geometry" />
+          <mxGeometry x="619" y="-1480" width="10" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-2" value="POST /login" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" source="Vjd4TAc9SW9HnnaeWUUt-0" target="Vjd4TAc9SW9HnnaeWUUt-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="435" y="850" as="sourcePoint" />
+            <mxPoint x="439" y="-1480" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="525" y="850" />
+              <mxPoint x="529" y="-1480" />
             </Array>
-            <mxPoint x="600" y="850" as="targetPoint" />
+            <mxPoint x="604" y="-1480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-3" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" source="Vjd4TAc9SW9HnnaeWUUt-1" target="Vjd4TAc9SW9HnnaeWUUt-0" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="610" y="870" as="sourcePoint" />
+            <mxPoint x="614" y="-1460" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="530" y="870" />
+              <mxPoint x="534" y="-1460" />
             </Array>
-            <mxPoint x="280" y="870" as="targetPoint" />
+            <mxPoint x="284" y="-1460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-4" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="160" y="770" width="620" height="220" as="geometry" />
+          <mxGeometry x="164" y="-1560" width="620" height="220" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-6" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="250" y="910" width="10" height="40" as="geometry" />
+          <mxGeometry x="254" y="-1420" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-7" value="有効期限タイマーを設定する。" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" target="Vjd4TAc9SW9HnnaeWUUt-6" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="255" y="890" as="sourcePoint" />
+            <mxPoint x="259" y="-1440" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="285" y="920" />
+              <mxPoint x="289" y="-1410" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-8" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;トークンの有効期限切れを防ぐために、アプリは、&lt;/span&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;直接アクセス・ポイントのアクセス・トークンは定期的に取得する必要がある。&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="50" y="690" width="170" height="70" as="geometry" />
+          <mxGeometry x="54" y="-1640" width="170" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-9" value=":App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="200" y="150" width="100" height="830" as="geometry" />
+          <mxGeometry x="204" y="-2180" width="100" height="830" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="Vjd4TAc9SW9HnnaeWUUt-9" vertex="1">
           <mxGeometry x="45" y="70" width="10" height="460" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-11" value="POST /login" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" target="Vjd4TAc9SW9HnnaeWUUt-16" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="256" y="230" as="sourcePoint" />
+            <mxPoint x="260" y="-2100" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="341" y="230" />
+              <mxPoint x="345" y="-2100" />
             </Array>
-            <mxPoint x="426" y="230" as="targetPoint" />
+            <mxPoint x="430" y="-2100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-12" value="201 created" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615" y="310" as="sourcePoint" />
+            <mxPoint x="619" y="-2020" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="350" y="310" />
+              <mxPoint x="354" y="-2020" />
             </Array>
-            <mxPoint x="255" y="310" as="targetPoint" />
+            <mxPoint x="259" y="-2020" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-13" value=":C-2-2 [B]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="560" y="150" width="120" height="760" as="geometry" />
+          <mxGeometry x="564" y="-2180" width="120" height="760" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="Vjd4TAc9SW9HnnaeWUUt-13" vertex="1">
           <mxGeometry x="55" y="230" width="10" height="50" as="geometry" />
@@ -548,74 +563,74 @@
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-17" value="GET /Facade" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" source="Vjd4TAc9SW9HnnaeWUUt-10" target="Vjd4TAc9SW9HnnaeWUUt-14" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="434.9999999999998" y="359.9999999999998" as="sourcePoint" />
+            <mxPoint x="438.9999999999998" y="-1970.0000000000002" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="490" y="380" />
-              <mxPoint x="520" y="360" />
+              <mxPoint x="494" y="-1950" />
+              <mxPoint x="524" y="-1970" />
             </Array>
-            <mxPoint x="610" y="360" as="targetPoint" />
+            <mxPoint x="614" y="-1970" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-18" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" source="Vjd4TAc9SW9HnnaeWUUt-14" target="Vjd4TAc9SW9HnnaeWUUt-10" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="610" y="390" as="sourcePoint" />
+            <mxPoint x="614" y="-1940" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="450" y="420" />
-              <mxPoint x="535" y="390" />
+              <mxPoint x="454" y="-1910" />
+              <mxPoint x="539" y="-1940" />
             </Array>
-            <mxPoint x="434.9999999999998" y="389.9999999999998" as="targetPoint" />
+            <mxPoint x="438.9999999999998" y="-1940.0000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-19" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;ログイン&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="50" y="220" width="170" height="40" as="geometry" />
+          <mxGeometry x="54" y="-2110" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-21" value="&lt;span style=&quot;background-color: rgb(251, 251, 251);&quot;&gt;GET /{targetDataModel}&lt;/span&gt;&lt;div&gt;GET /map/{z}/{x}/{y}.pbf&lt;/div&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="ruvBuBlSj2xhvu7RqnBg-1" target="Vjd4TAc9SW9HnnaeWUUt-15" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="255" y="490" as="sourcePoint" />
+            <mxPoint x="259" y="-1840" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="335" y="490" />
+              <mxPoint x="339" y="-1840" />
             </Array>
-            <mxPoint x="610" y="490" as="targetPoint" />
+            <mxPoint x="614" y="-1840" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-22" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="615" y="670" as="sourcePoint" />
+            <mxPoint x="619" y="-1660" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="535" y="670" />
+              <mxPoint x="539" y="-1660" />
             </Array>
-            <mxPoint x="255" y="670" as="targetPoint" />
+            <mxPoint x="259" y="-1660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-23" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;直接アクセス・ポイントのみ使用。&lt;br&gt;　　（全てのアクセスを担う）&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="50" y="480" width="170" height="40" as="geometry" />
+          <mxGeometry x="54" y="-1850" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-24" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;アプリが車両情報連携システム(C-2-2[B])と直接通信する場合&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;【このシーケンスは、検証時（C-2-2DMP部のみで（C-2-2NTTデータ部無しで）試験する場合）&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;　および、将来ビューワ・アプリを3DMapsPocketに転用する時に使用する想定】&lt;/font&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry width="790" height="80" as="geometry" />
+          <mxGeometry x="4" y="-2330" width="790" height="80" as="geometry" />
         </mxCell>
         <mxCell id="Vjd4TAc9SW9HnnaeWUUt-27" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;C-2-2[B]の公開IPアドレス&lt;/font&gt;&lt;/b&gt;を返す。　&lt;/font&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.17;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="630" y="340" width="170" height="60" as="geometry" />
+          <mxGeometry x="634" y="-1990" width="170" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jZ8wl6KddRqDRTYOlXlJ-0" value="&lt;span style=&quot;text-align: center;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;アプリがC-2-2[B]に直結する場合はC-2-2[A]提供APIは利用不可の想定&lt;/font&gt;&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.09;base=36;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="280" y="90" width="350" height="60" as="geometry" />
+          <mxGeometry x="284" y="-2240" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="gjcYO8cQkNe823A9WUKT-0" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;直接アクセス・ポイント情報を取得&lt;/span&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;　&lt;/font&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="50" y="360" width="170" height="40" as="geometry" />
+          <mxGeometry x="54" y="-1970" width="170" height="40" as="geometry" />
         </mxCell>
         <mxCell id="5uZXyRgt52kktwFOou6K-0" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;DMP API /loginを利用して&lt;/font&gt;&lt;/b&gt;ユーザートークン発行&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
-          <mxGeometry x="690" y="180" width="130" height="70" as="geometry" />
+          <mxGeometry x="694" y="-2150" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="ZTDwBpcecwLaiijWSec1-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;DMP API /loginで発行した&lt;/font&gt;&lt;/b&gt;ユーザートークンを検証&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" vertex="1" parent="ruvBuBlSj2xhvu7RqnBg-1">
-          <mxGeometry x="680" y="440" width="130" height="70" as="geometry" />
+        <mxCell id="ZTDwBpcecwLaiijWSec1-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;DMP API /loginで発行した&lt;/font&gt;&lt;/b&gt;ユーザートークンを検証&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
+          <mxGeometry x="684" y="-1890" width="130" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="ZTDwBpcecwLaiijWSec1-2" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;DMP API /loginを利用して&lt;/font&gt;&lt;/b&gt;ユーザートークンを更新（再発行）&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" vertex="1" parent="ruvBuBlSj2xhvu7RqnBg-1">
-          <mxGeometry x="640" y="780" width="130" height="70" as="geometry" />
+        <mxCell id="ZTDwBpcecwLaiijWSec1-2" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;DMP API /loginを利用して&lt;/font&gt;&lt;/b&gt;ユーザートークンを更新（再発行）&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" parent="ruvBuBlSj2xhvu7RqnBg-1" vertex="1">
+          <mxGeometry x="644" y="-1550" width="130" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="HU3lu07iayTK3itxfe-O" name="[API]気象リスク取得">
-    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -721,7 +736,7 @@
           <mxGeometry x="520" y="170" width="225" height="120" as="geometry" />
         </mxCell>
         <mxCell id="_5ANugc-oTVDcjVhYPvX-1" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;シミュレーション（風向・風速・雨水膜厚）は、定期的に実行され続ける。&lt;br&gt;APIは、リクエスト受信時の最新の結果を返す。&lt;/font&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.29;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.13;base=20;direction=west;" parent="1" vertex="1">
-          <mxGeometry x="600" y="380" width="240" height="80" as="geometry" />
+          <mxGeometry x="590" y="350" width="230" height="80" as="geometry" />
         </mxCell>
         <mxCell id="DmVg7Epq5sWDp3UFdlhJ-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;シミュレーション結果&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="560" y="340" width="120" height="20" as="geometry" />
@@ -736,7 +751,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qveQoeRRaFOtR1L6EotX" name="[API]共有資源状態取得・設定">
-    <mxGraphModel dx="1434" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -752,17 +767,20 @@
         <mxCell id="_thnx5QxHjN6uBZexlEw-7" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;共有資源状態取得&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="30" y="180" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="_thnx5QxHjN6uBZexlEw-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C-2-2[B] API 共有資源状態取得・設定&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-          <mxGeometry width="320" height="40" as="geometry" />
+        <mxCell id="_thnx5QxHjN6uBZexlEw-9" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C-2-2[B] API 共有資源状態取得・設定&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;※UC①共同輸送計画策定【MH予約】【MH予約変更】のページの補足情報参照&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" parent="1" vertex="1">
+          <mxGeometry width="820" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-11" value=":アプリ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="180" y="120" width="100" height="440" as="geometry" />
+          <mxGeometry x="180" y="120" width="100" height="680" as="geometry" />
         </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="_thnx5QxHjN6uBZexlEw-11" vertex="1">
           <mxGeometry x="45" y="290" width="10" height="120" as="geometry" />
         </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_thnx5QxHjN6uBZexlEw-11">
+          <mxGeometry x="45" y="540" width="10" height="110" as="geometry" />
+        </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-15" value=":C-2-2[B]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
-          <mxGeometry x="380" y="120" width="100" height="440" as="geometry" />
+          <mxGeometry x="380" y="120" width="100" height="660" as="geometry" />
         </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-16" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="_thnx5QxHjN6uBZexlEw-15" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="150" as="geometry" />
@@ -777,6 +795,21 @@
         </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-18" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="_thnx5QxHjN6uBZexlEw-15" vertex="1">
           <mxGeometry x="50" y="120" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-3" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_thnx5QxHjN6uBZexlEw-15">
+          <mxGeometry x="45" y="550" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-4" value="共有資源管理DBテーブルから削除" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="_thnx5QxHjN6uBZexlEw-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="570" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="600" />
+            </Array>
+            <mxPoint x="60" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nY3CReKMKjr4KmujWYYE-1" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="_thnx5QxHjN6uBZexlEw-15">
+          <mxGeometry x="50" y="590" width="10" height="40" as="geometry" />
         </mxCell>
         <mxCell id="_thnx5QxHjN6uBZexlEw-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="1" vertex="1">
           <mxGeometry x="225" y="180" width="10" height="170" as="geometry" />
@@ -823,18 +856,58 @@
         <mxCell id="KG34iZty6_7BgRluUjZ3-3" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;共有資源状態設定&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" parent="1" vertex="1">
           <mxGeometry x="30" y="400" width="170" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="_weI31Ll6g44lFAspBM6-1" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;key無し、valueのみをRequest Bodyに格納&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" vertex="1" parent="1">
+          <mxGeometry x="435" y="380" width="205" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wbkSTn6olyI542ZB6w4q-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;keyにResource IDを格納してResponse&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.83;base=19;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="235" y="520" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wbkSTn6olyI542ZB6w4q-2" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&quot;value&quot;に新規Resource IDを割り当てて、(key, value)ペアをDBにUPSERT&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.83;base=19;direction=west;" vertex="1" parent="1">
+          <mxGeometry x="470" y="460" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GwC3uCqvtqaG4X2TFqYn-1" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="1">
+          <mxGeometry x="210" y="170" width="440" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ZDrWIwQESkbCCyDKNCyr-1" value="&lt;span style=&quot;background-color: initial;&quot;&gt;※ 薄灰色枠　　　 で囲った部分は、FY24は未使用予定。&amp;nbsp;&lt;/span&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="1">
+          <mxGeometry x="500" y="60" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZDrWIwQESkbCCyDKNCyr-2" value="" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#eeeeee;strokeColor=#B3B3B3;align=left;dashed=1;opacity=60;" vertex="1" parent="ZDrWIwQESkbCCyDKNCyr-1">
+          <mxGeometry x="70" y="10" width="30" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;共有資源状態削除&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="30" y="630" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-5" value="DELETE /Resources" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="670" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="321" y="670" />
+            </Array>
+            <mxPoint x="425" y="670" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-6" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="760" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="235" y="760" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="YEXngOxnkIk0ccfsjWPE-7" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;keyfilterで指定されたResourceをDBから削除&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" vertex="1" parent="1">
+          <mxGeometry x="435" y="630" width="225" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram name="[API]動的情報（物標情報）取得" id="2mfyta1SLwF8oXtQrfmh">
-    <mxGraphModel dx="1434" dy="854" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="u3usc7CDZmAAOR1GW_Bw-0" />
         <mxCell id="u3usc7CDZmAAOR1GW_Bw-1" parent="u3usc7CDZmAAOR1GW_Bw-0" />
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-2" value=":アプリ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-2" value=":アプリ" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="205" y="120" width="100" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-3" value="物標情報を画面に表示" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="u3usc7CDZmAAOR1GW_Bw-2">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-3" value="物標情報を画面に表示" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="u3usc7CDZmAAOR1GW_Bw-2" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="55" y="390" as="sourcePoint" />
             <Array as="points">
@@ -843,10 +916,10 @@
             <mxPoint x="60" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="250" y="180" width="10" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-5" value="GET /dynamicinfo (座標領域)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="u3usc7CDZmAAOR1GW_Bw-1" source="u3usc7CDZmAAOR1GW_Bw-4" target="u3usc7CDZmAAOR1GW_Bw-14">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-5" value="GET /dynamicinfo (座標領域)" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" parent="u3usc7CDZmAAOR1GW_Bw-1" source="u3usc7CDZmAAOR1GW_Bw-4" target="u3usc7CDZmAAOR1GW_Bw-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="295" y="210" as="sourcePoint" />
             <Array as="points">
@@ -856,19 +929,19 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-10" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;動的情報（物標情報）取得API&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;呼び出し&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-10" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;動的情報（物標情報）取得API&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;呼び出し&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="70" y="180" width="170" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C-2-2[A] API 動的情報（物標情報）取得&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;C-2-2[A] API 動的情報（物標情報）取得&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry width="370" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-13" value=":C-2-2[A]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-13" value=":C-2-2[A]" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="515" y="120" width="100" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-13">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-13" vertex="1">
           <mxGeometry x="45" y="80" width="10" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-19" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="u3usc7CDZmAAOR1GW_Bw-1" source="u3usc7CDZmAAOR1GW_Bw-14">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-19" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" parent="u3usc7CDZmAAOR1GW_Bw-1" source="u3usc7CDZmAAOR1GW_Bw-14" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="440" y="250" as="sourcePoint" />
             <Array as="points">
@@ -877,13 +950,13 @@
             <mxPoint x="260" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="u3usc7CDZmAAOR1GW_Bw-24" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="u3usc7CDZmAAOR1GW_Bw-24" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="255" y="530" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qHx60g5FFv9k8hAHIVsJ-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="qHx60g5FFv9k8hAHIVsJ-7" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="255" y="300" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qHx60g5FFv9k8hAHIVsJ-8" value="停止車両情報以外を消去&lt;div&gt;※ 速度0の「車両」を「停止車両」とする&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="qHx60g5FFv9k8hAHIVsJ-7" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="qHx60g5FFv9k8hAHIVsJ-8" value="停止車両情報以外を消去&lt;div&gt;※ 速度0の「車両」を「停止車両」とする&lt;/div&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="u3usc7CDZmAAOR1GW_Bw-1" target="qHx60g5FFv9k8hAHIVsJ-7" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="280" as="sourcePoint" />
             <Array as="points">
@@ -891,19 +964,218 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="8_qao3bNYTBAmI7VPu07-0" value="GPS画面表示時" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=140;height=30;" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="8_qao3bNYTBAmI7VPu07-0" value="GPS画面表示時" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=140;height=30;" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="50" y="360" width="740" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="vxj7zGFCGbJzOIXpB2q2-0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="vxj7zGFCGbJzOIXpB2q2-0" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" parent="u3usc7CDZmAAOR1GW_Bw-1" vertex="1">
           <mxGeometry x="255" y="410" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="vxj7zGFCGbJzOIXpB2q2-1" value="自身の進行方向正面を0度として±90度の範囲の物標情報 以外を消去" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="vxj7zGFCGbJzOIXpB2q2-0" parent="u3usc7CDZmAAOR1GW_Bw-1">
+        <mxCell id="vxj7zGFCGbJzOIXpB2q2-1" value="自身の進行方向正面を0度として±90度の範囲の物標情報 以外を消去" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" parent="u3usc7CDZmAAOR1GW_Bw-1" target="vxj7zGFCGbJzOIXpB2q2-0" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="260" y="390" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="290" y="420" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="UC①共同輸送計画策定【MH新規予約】" id="Qoy99klVEzS3Hy5s8ZVL">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-0" />
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-1" parent="hrr4CqjRix7CzSYLN-nh-0" />
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-4" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;UC①共同輸送計画策定【モビリティハブ(MH)予約】&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=left;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry width="450" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-5" value=":共同輸送システム" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="170" y="40" width="110" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-5">
+          <mxGeometry x="50" y="370" width="10" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-7" value=":C-2-2" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="380" y="40" width="100" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-14" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-7">
+          <mxGeometry x="45" y="375" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-13" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="hrr4CqjRix7CzSYLN-nh-1" target="hrr4CqjRix7CzSYLN-nh-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="510" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="235" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-15" value="PUT /Resources" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="hrr4CqjRix7CzSYLN-nh-1" source="hrr4CqjRix7CzSYLN-nh-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="235" y="419.5" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="321" y="419.5" />
+            </Array>
+            <mxPoint x="425" y="419.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-16" value="MH予約処理&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;※ FY24は、予約IDを付与してDBに格納するのみ。&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="hrr4CqjRix7CzSYLN-nh-1" target="hrr4CqjRix7CzSYLN-nh-17">
+          <mxGeometry x="0.0118" relative="1" as="geometry">
+            <mxPoint x="435" y="430" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="465" y="460" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-17" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="430" y="450" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="hrr4CqjRix7CzSYLN-nh-18" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;MH新規予約&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="40" y="380" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AWkyoLZiMKowNWOVyDKF-0" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;box-sizing: border-box; max-height: 400px; min-height: 6em; overflow: auto; overflow-wrap: break-word; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border-radius: 4px; hyphens: auto; margin-top: 0px; margin-bottom: 0px; padding: 0.5em; word-break: break-word;&quot; class=&quot;body-param__example microlight&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-size: 1em; word-break: break-all;&quot; class=&quot;language-json&quot;&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;u&gt;PUT /Resources のリクエスト・ボディ &lt;br&gt;&lt;/u&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;dataModelType&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;test1&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;attribute&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;mobilityhub&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;statuses&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: [&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      {&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;       &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;b&gt;: &quot;&lt;/b&gt;&lt;i style=&quot;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;base64-mh-reservation-props&lt;/font&gt;&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&quot;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validFrom&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T02:00:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validUntil&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T03:30:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      }&lt;br&gt;&lt;/font&gt;&lt;/code&gt;&lt;span style=&quot;font-weight: 600; text-wrap: wrap;&quot;&gt;    ]&lt;br&gt;  }&lt;br&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.11;base=30;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="440" y="160" width="370" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="AWkyoLZiMKowNWOVyDKF-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;予約希望時刻&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;以外&lt;/font&gt;&lt;/b&gt;のプロパティは、&lt;/span&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;&quot;value&quot;に&amp;nbsp; &amp;nbsp; &amp;nbsp; Base64 Encodeして格納する。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="560" y="330" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="5jl1wFLQhFDoTs1gVLmW-0" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box; max-height: 400px; min-height: 6em; overflow: auto; overflow-wrap: break-word; border-radius: 4px; hyphens: auto; margin-top: 0px; margin-bottom: 0px; padding: 0.5em; word-break: break-word;&quot; class=&quot;body-param__example microlight&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-size: 1em; word-break: break-all;&quot; class=&quot;language-json&quot;&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;u&gt;PUT /Resources のレスポンス &lt;br&gt;&lt;/u&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;dataModelType&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;test1&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;attribute&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;mobilityhub&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;statuses&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: [&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      {&lt;br&gt;        &quot;key&quot;: &quot;&lt;i&gt;&lt;font color=&quot;#ff0000&quot;&gt;mh-reservation-id&lt;/font&gt;&lt;/i&gt;&quot;&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;       &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;b&gt;: &quot;&lt;/b&gt;&lt;i&gt;&lt;b&gt;base64-mh-reservation-props&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&quot;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validFrom&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T02:00:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validUntil&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T03:30:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      }&lt;br&gt;&lt;/font&gt;&lt;/code&gt;&lt;span style=&quot;font-weight: 600; text-wrap: wrap;&quot;&gt;    ]&lt;br&gt;  }&lt;br&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.43;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=50;position=0.49;base=30;direction=west;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="20" y="510" width="370" height="300.57" as="geometry" />
+        </mxCell>
+        <mxCell id="5jl1wFLQhFDoTs1gVLmW-1" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;確定したMH予約IDは、&quot;key&quot;に格納される。&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="130" y="750" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TX3PHEVXxKzxugcAQL80-0" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;u&gt;&lt;font color=&quot;#ff0000&quot;&gt;【 base64-mh-reservation-props 】&lt;/font&gt;&lt;br&gt;&lt;/u&gt;&lt;br&gt;MH予約に必要な全ての属性情報（ただし予約希望時刻・期間を除く）を&lt;br&gt;JSON形式に整形したものをBASE64エンコードした文字列。&lt;br&gt;予約希望時刻（開始時刻・終了時刻）はそれぞれ validFrom, validUntilで指定する。&lt;br&gt;※ 下に例を示す。FY24は、C-2-2は属性情報の内容について関知しない。&lt;br&gt;&lt;br&gt;{&lt;br&gt;&amp;nbsp; &amp;nbsp; &quot;mobilityHubId&quot;: &quot;E1A-001-U&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &quot;freightId&quot;: &quot;123-456-789&quot;,&lt;br&gt;&amp;nbsp; &amp;nbsp; &quot;truckId&quot;: &quot;品川 102 あ 10-09&quot;,&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &quot;sizeClass&quot;: &quot;large2050Class&quot;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;}&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;この例の場合、valueには下記の値を設定する。&lt;/b&gt;&lt;br&gt;&lt;b&gt;&amp;nbsp; &quot;value&quot;:&quot;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;ewogICAgIm1vYmlsaXR5SHViSWQiOiAiRTFBLTAwMS1VIiwKICAgI&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;CJmcmVpZ2h0SWQiOiAiMTIzLTQ1Ni03ODkiLAogICAgInRydWNrSWQiOiAi5ZO&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;B5bedIDEwMiDjgYIgMTAtMDkiLAogICAgInNpemVDbGFzcyI6ICJsYXJnZTIwN&lt;/span&gt;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;TBDbGFzcyIKfQo&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;=&quot;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; white-space: pre;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#E6FFCC;strokeColor=#b85450;fillStyle=solid;direction=west;gradientDirection=north;shadow=1;size=20;pointerEvents=1;align=left;strokeWidth=2;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="460" y="680" width="360" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TX3PHEVXxKzxugcAQL80-1" value="&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;【注釈】&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;...... モビリティハブID&lt;/font&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;...... 便名&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;...... 車両識別子&lt;br&gt;...... 要求駐車スペースサイズ&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;fillStyle=solid;direction=west;gradientDirection=north;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="620" y="800" width="150" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="7f3soLOx9j_ApBMzxocF-0" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;validUntil の時刻が現在時刻よりも古いDBレコードは自動消去される。&lt;/span&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.83;base=19;direction=west;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="520" y="480" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cG1TAFP36uTBaI6Vila9-1" value="①-3" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="240" y="380" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="cG1TAFP36uTBaI6Vila9-4" value="①-4" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="240" y="480" width="30" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="IKw6Z4yRi5rSxRjWlKQt-0" value="（&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;※ 図中の「①-&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;n」 は、&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;「C-2xC-4連携ユースケース案PPT資料番号」を示す ）&lt;/span&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="hrr4CqjRix7CzSYLN-nh-1">
+          <mxGeometry x="370" y="1020" width="450" height="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="UC①共同輸送計画策定【MH予約変更】" id="aegOxvSpO_oimZYNQEzW">
+    <mxGraphModel dx="1418" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-0" />
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-1" parent="o7AzQsfYpuOzmoQz4NYI-0" />
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-2" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;UC①共同輸送計画策定【MH予約変更】 &lt;/span&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;※FY24の予約変更は、「(1)予約キャンセル + (2)新規予約」の2段階が必要&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry width="820" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-3" value=":共同輸送システム" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="170" y="40" width="110" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-1" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-3">
+          <mxGeometry x="50" y="80" width="10" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-5" value=":C-2-2" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=0;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="380" y="40" width="100" height="620" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-5">
+          <mxGeometry x="45" y="92.5" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-3" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-5">
+          <mxGeometry x="50" y="130" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-4" value="MH予約キャンセル処理" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" target="0gh4B4jpsZut1LgqvkPd-3" parent="o7AzQsfYpuOzmoQz4NYI-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="110" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="85" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-11" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;(2) MH新規予約&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="40" y="530" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-6" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="425" y="545" width="10" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-7" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="640" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="230" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-8" value="PUT /Resources" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=horizontal;curved=0;rounded=0;" edge="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="549.5" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="321" y="549.5" />
+            </Array>
+            <mxPoint x="425" y="549.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-9" value="MH予約処理&lt;br&gt;&lt;font color=&quot;#ff0000&quot;&gt;※ FY24は、予約IDを付与してDBに格納するのみ。&lt;/font&gt;" style="html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;edgeStyle=orthogonalEdgeStyle;curved=0;rounded=0;" edge="1" parent="o7AzQsfYpuOzmoQz4NYI-1" target="o7AzQsfYpuOzmoQz4NYI-10">
+          <mxGeometry x="0.0118" relative="1" as="geometry">
+            <mxPoint x="435" y="560" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="465" y="590" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-10" value="" style="html=1;points=[[0,0,0,0,5],[0,1,0,0,-5],[1,0,0,0,5],[1,1,0,0,-5]];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="430" y="580" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-12" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;box-sizing: border-box; max-height: 400px; min-height: 6em; overflow: auto; overflow-wrap: break-word; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border-radius: 4px; hyphens: auto; margin-top: 0px; margin-bottom: 0px; padding: 0.5em; word-break: break-word;&quot; class=&quot;body-param__example microlight&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-size: 1em; word-break: break-all;&quot; class=&quot;language-json&quot;&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;u&gt;PUT /Resources のリクエスト・ボディ &lt;br&gt;&lt;/u&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;dataModelType&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;test1&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;attribute&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;mobilityhub&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;statuses&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: [&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      {&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;       &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;b&gt;: &quot;&lt;/b&gt;&lt;i style=&quot;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;base64-mh-reservation-props&lt;/font&gt;&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&quot;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validFrom&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T02:00:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validUntil&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T03:30:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; text-wrap: nowrap; box-sizing: inherit;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      }&lt;br&gt;&lt;/font&gt;&lt;/code&gt;&lt;span style=&quot;font-weight: 600; text-wrap: wrap;&quot;&gt;    ]&lt;br&gt;  }&lt;br&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=30;position=0.11;base=30;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="440" y="290" width="370" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-13" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;予約希望時間&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;以外&lt;/font&gt;&lt;/b&gt;のプロパティは、&lt;/span&gt;&lt;span style=&quot;font-size: 10px; background-color: initial;&quot;&gt;&quot;value&quot;に&amp;nbsp; &amp;nbsp; &amp;nbsp; Base64 Encodeして格納する。&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="570" y="460" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-14" value="&lt;div style=&quot;&quot;&gt;&lt;pre style=&quot;background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; box-sizing: border-box; max-height: 400px; min-height: 6em; overflow: auto; overflow-wrap: break-word; border-radius: 4px; hyphens: auto; margin-top: 0px; margin-bottom: 0px; padding: 0.5em; word-break: break-word;&quot; class=&quot;body-param__example microlight&quot;&gt;&lt;code style=&quot;box-sizing: border-box; font-size: 1em; word-break: break-all;&quot; class=&quot;language-json&quot;&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;u&gt;PUT /Resources のレスポンス &lt;br&gt;&lt;/u&gt;{&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;dataModelType&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;test1&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;  &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;attribute&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: {&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;category&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;mobilityhub&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;statuses&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: [&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      {&lt;br&gt;        &quot;key&quot;: &quot;&lt;i&gt;&lt;font color=&quot;#ff0000&quot;&gt;mh-reservation-id&lt;/font&gt;&lt;/i&gt;&quot;&lt;br&gt;&lt;/font&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;       &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;value&quot;&lt;/span&gt;&lt;span style=&quot;font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;b&gt;: &quot;&lt;/b&gt;&lt;i&gt;&lt;b&gt;base64-mh-reservation-props&lt;/b&gt;&lt;/i&gt;&lt;b&gt;&quot;&lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validFrom&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T02:00:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;,&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;        &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot; class=&quot;hljs-attr&quot;&gt;&quot;validUntil&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;: &lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&quot;2025-04-22T03:30:00.000+0900&quot;&lt;/span&gt;&lt;span style=&quot;font-weight: 600; font-family: Consolas, monaco, monospace; box-sizing: inherit;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;font style=&quot;font-weight: 600;&quot; face=&quot;Consolas, monaco, monospace&quot;&gt;      }&lt;br&gt;&lt;/font&gt;&lt;/code&gt;&lt;span style=&quot;font-weight: 600; text-wrap: wrap;&quot;&gt;    ]&lt;br&gt;  }&lt;br&gt;}&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0.43;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=50;position=0.49;base=30;direction=west;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="20" y="640" width="370" height="300.57" as="geometry" />
+        </mxCell>
+        <mxCell id="o7AzQsfYpuOzmoQz4NYI-15" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;確定したMH予約IDは、&quot;key&quot;に格納される。&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=left;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="130" y="880" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-0" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;b&gt;(1) MH予約キャンセル&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;fontColor=#000000;darkOpacity=0.05;fillColor=#FFF9B2;strokeColor=none;fillStyle=solid;direction=west;gradientDirection=north;gradientColor=#FFF2A1;shadow=1;size=20;pointerEvents=1;align=center;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="40" y="120" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-6" value="DELETE /Resources?&lt;b&gt;&lt;i&gt;&lt;font color=&quot;#ff0000&quot;&gt;keyfilter=mh-reservation-id&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;" style="html=1;verticalAlign=bottom;endArrow=block;curved=0;rounded=0;" edge="1" parent="o7AzQsfYpuOzmoQz4NYI-1" source="0gh4B4jpsZut1LgqvkPd-1">
+          <mxGeometry x="0.4211" y="10" width="80" relative="1" as="geometry">
+            <mxPoint x="345" y="139.5" as="sourcePoint" />
+            <mxPoint x="425" y="139.5" as="targetPoint" />
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0gh4B4jpsZut1LgqvkPd-7" value="200 OK" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;dashed=1;" edge="1" parent="o7AzQsfYpuOzmoQz4NYI-1" target="0gh4B4jpsZut1LgqvkPd-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="220" as="sourcePoint" />
+            <Array as="points" />
+            <mxPoint x="235" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iU4Z_N8jppqeyUrvqWJQ-0" value="&lt;span style=&quot;font-size: 10px;&quot;&gt;キャンセルすべき予約IDを&quot;keyfilter&quot;で指定する。&lt;/span&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;position2=0;fillColor=#fff2cc;strokeColor=#d6b656;align=left;size=20;position=0.22;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="500" y="60" width="125" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ndA2h5Y2GEQGKZW5-rw9-0" value="①-5 (2/2)" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="240" y="510" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ndA2h5Y2GEQGKZW5-rw9-3" value="①-5 (1/2)" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="240" y="90" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ndA2h5Y2GEQGKZW5-rw9-4" value="①-6 (1/2)" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="240" y="190" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ndA2h5Y2GEQGKZW5-rw9-5" value="①-6 (2/2)" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="240" y="610" width="60" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="8yLXywJz3ZTVyCCCNLwE-0" value="（&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;※ 図中の「①-&lt;/span&gt;&lt;i style=&quot;background-color: initial;&quot;&gt;n」 は、&lt;/i&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;「C-2xC-4連携ユースケース案PPT資料番号」を示す ）&lt;/span&gt;" style="html=1;whiteSpace=wrap;container=1;recursiveResize=0;collapsible=0;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;" vertex="1" parent="o7AzQsfYpuOzmoQz4NYI-1">
+          <mxGeometry x="370" y="1020" width="450" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
