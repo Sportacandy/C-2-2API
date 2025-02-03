@@ -11,12 +11,14 @@ info:
     Ventus Technologies GmbH reserves the right to add, change, or remove, any feature described in this document.
   contact:
     name: Ventus Technologies GmbH
-    url: https://ventus-tech.de
+    url: https://8dg5t.weatheronroads.com/docs
     email: contact@ventus-tech.de
   license:
     name: © 2024 Ventus Technologies GmbH – All Rights Reserved
 servers:
-  - url: https://api.ventus-tech.de/v0-draft/
+  - url: https://8dg5t.weatheronroads.com
+security:
+  - ApiKeyAuth: []
 paths:
   /forecast/route:
     post:
@@ -44,6 +46,11 @@ paths:
               schema:
                 $ref: "#/components/schemas/ForecastResponse"
 components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
   schemas:
     ForecastVariable:
       type: string
