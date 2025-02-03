@@ -59,42 +59,40 @@ components:
           minimum: -2147483648
           maimum: 2147483647
           example: 1
-        minSeq:
-          description: HDシーケンス番号最小値
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 0
-        maxSeq:
-          description: HDシーケンス番号最大値
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 5
-        linkId:
-          description: SD道路リンクID。SDマップと関連がない場合は-1。
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 3253746
-        direction:
-          description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
-          type: number
-          format: int32
-          minimum: -1
-          maximum: 2
-          example: 1
-        waterfilms:
+        # minSeq:
+        #   description: HDシーケンス番号最小値
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 0
+        # maxSeq:
+        #   description: HDシーケンス番号最大値
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 5
+        # linkId:
+        #   description: SD道路リンクID。SDマップと関連がない場合は-1。
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 3253746
+        # direction:
+        #   description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
+        #   type: number
+        #   format: int32
+        #   minimum: -1
+        #   maximum: 2
+        #   example: 1
+        waterfilmThickness:
           description: 水膜厚(mm)
-          type: array
-          minItems: 1
-          items:
-            type: number
-            format: double
-            minimum: 0
+          type: number
+          format: double
+          minimum: 0
+          maximum: 2147483647
           example: 1.2
     windprops:
       type: object
@@ -106,34 +104,34 @@ components:
           minimum: -2147483648
           maximum: 2147483647
           example: 18
-        minSeq:
-          description: HDシーケンス番号最小値
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 0
-        maxSeq:
-          description: HDシーケンス番号最大値
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 5
-        linkId:
-          description: SD道路リンクID。SDマップと関連がない場合は-1。
-          type: number
-          format: int32
-          minimum: -2147483648
-          maximum: 2147483647
-          example: 3253746
-        direction:
-          description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
-          type: number
-          format: int32
-          minimum: -1
-          maximum: 2
-          example: 1
+        # minSeq:
+        #   description: HDシーケンス番号最小値
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 0
+        # maxSeq:
+        #   description: HDシーケンス番号最大値
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 5
+        # linkId:
+        #   description: SD道路リンクID。SDマップと関連がない場合は-1。
+        #   type: number
+        #   format: int32
+        #   minimum: -2147483648
+        #   maximum: 2147483647
+        #   example: 3253746
+        # direction:
+        #   description: SD道路リンク方向。SDマップと関連がない場合は-1。1=正方向、2=逆方向
+        #   type: number
+        #   format: int32
+        #   minimum: -1
+        #   maximum: 2
+        #   example: 1
         windSpeed:
           description: 風速(m/s)
           type: number
